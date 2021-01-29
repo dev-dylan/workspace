@@ -55,3 +55,14 @@ target 'ListClickDemo' do
   # Pods for ListClickDemo
 
 end
+
+target 'SwiftDemo' do
+  project 'widgetDemo/SwiftDemo'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+    pod 'SensorsAnalyticsSDK', :path => "~/Documents/GitLab/sa-sdk-ios-test", :subspecs => ['Location']
+
+  # Pods for ListClickDemo
+
+end
+
