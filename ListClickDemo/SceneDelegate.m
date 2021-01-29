@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
 
 @interface SceneDelegate ()
 
@@ -20,9 +21,30 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     NSUserActivity *user = connectionOptions.userActivities.allObjects.firstObject;
     UIOpenURLContext *urlContext = connectionOptions.URLContexts.allObjects.firstObject;
-    NSLog(@"$$$$$$$$$$$ %@", user);
+    [self initSASDK:connectionOptions];
 }
 
+- (void)initSASDK:(id)launchOptions {
+    SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:@"https://newsdktest.datasink.sensorsdata.cn/sa?project=pengyuanyang&token=5a394d2405c147ca" launchOptions:launchOptions];
+    options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick | SensorsAnalyticsEventTypeAppViewScreen;
+    options.enableLog = YES;
+    options.enableVisualizedAutoTrack = YES;
+    options.enableHeatMap = YES;
+    [SensorsAnalyticsSDK startWithConfigOptions:options];
+}
+
+-(void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+    UIOpenURLContext *urlContext = URLContexts.allObjects.firstObject;
+    if ([[SensorsAnalyticsSDK sharedInstance] canHandleURL:urlContext.URL]) {
+        [[SensorsAnalyticsSDK sharedInstance] handleSchemeUrl:urlContext.URL];
+    }
+}
+
+- (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity {
+    if ([[SensorsAnalyticsSDK sharedInstance] canHandleURL:userActivity.webpageURL]) {
+        [[SensorsAnalyticsSDK sharedInstance] handleSchemeUrl:userActivity.webpageURL];
+    }
+}
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
     // Called as the scene is being released by the system.

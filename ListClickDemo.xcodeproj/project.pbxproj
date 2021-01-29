@@ -59,6 +59,7 @@
 		FC261D102552B9F70086F84A /* ProductShopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductShopCollectionViewCell.m; sourceTree = "<group>"; };
 		FC261D112552B9F70086F84A /* ProductCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		FC261D122552B9F70086F84A /* ProductCateogoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCateogoryViewController.xib; sourceTree = "<group>"; };
+		FCAF833E25C4215800E2C25C /* ListClickDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ListClickDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 		FC261CCB25528D180086F84A /* ListClickDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FCAF833E25C4215800E2C25C /* ListClickDemo.entitlements */,
 				FC261D062552B9F70086F84A /* LineTableView */,
 				FC261CCC25528D180086F84A /* AppDelegate.h */,
 				FC261CCD25528D180086F84A /* AppDelegate.m */,
@@ -420,6 +422,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ListClickDemo/ListClickDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75FYWDWHL5;
 				INFOPLIST_FILE = ListClickDemo/Info.plist;
@@ -427,8 +431,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SA.ListClickDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pengyuanyang.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -439,6 +444,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ListClickDemo/ListClickDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75FYWDWHL5;
 				INFOPLIST_FILE = ListClickDemo/Info.plist;
@@ -446,8 +453,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SA.ListClickDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pengyuanyang.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

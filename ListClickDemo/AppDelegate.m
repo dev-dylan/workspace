@@ -14,27 +14,15 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self initSASDK:launchOptions];
     return YES;
-}
-
-- (void)initSASDK:(NSDictionary *)launchOptions {
-    SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:@"https://newsdktest.datasink.sensorsdata.cn/sa?project=pengyuanyang&token=5a394d2405c147ca" launchOptions:launchOptions];
-    options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick | SensorsAnalyticsEventTypeAppViewScreen;
-    options.enableLog = YES;
-    options.enableVisualizedAutoTrack = YES;
-    options.enableHeatMap = YES;
-    [SensorsAnalyticsSDK startWithConfigOptions:options];
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     [[SensorsAnalyticsSDK sharedInstance] handleSchemeUrl:url];
     return YES;
 }
-
 
 #pragma mark - UISceneSession lifecycle
 
@@ -44,7 +32,6 @@
     // Use this method to select a configuration to create the new scene with.
     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
-
 
 - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
     // Called when the user discards a scene session.
