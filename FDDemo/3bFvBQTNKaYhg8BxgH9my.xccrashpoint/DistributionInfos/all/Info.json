@@ -1,0 +1,32 @@
+{
+  "UniqueDeviceCount" : 1,
+  "CrashLogsCount" : 0,
+  "LastCrashReporterKey" : "",
+  "LastCrashPointPagingKey" : "",
+  "DistributionInfo" : {
+    "LastRefresh" : "2020-22-01T03:32:39.286Z",
+    "OSVersionSeries" : [
+      {
+        "OSVersion" : "iOS 11.0",
+        "Value" : 1
+      },
+      {
+        "OSVersion" : "all",
+        "Value" : 1
+      }
+    ],
+    "TimeSeries" : [
+      {
+        "Value" : 1,
+        "PeriodStart" : "2020-01-19T00:00:00Z"
+      }
+    ],
+    "DeviceTypeSeries" : [
+      {
+        "DeviceFamily" : "iPhone",
+        "Value" : 1
+      }
+    ]
+  },
+  "IsTopCrash" : true
+}

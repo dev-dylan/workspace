@@ -1,0 +1,24 @@
+{
+  "LocallySymbolicatedSourceFile" : "",
+  "UserData" : {
+    "Resolved" : false,
+    "Name" : "SensorsAnalyticsSDK: -[MessageQueueBySqlite initWithFilePath:] + 220",
+    "Description" : ""
+  },
+  "LocallySymbolicatedDefaultName" : "",
+  "DefaultName" : "SensorsAnalyticsSDK: -[MessageQueueBySqlite initWithFilePath:] + 220",
+  "LocallySymbolicatedSourceLine" : 0,
+  "Identifier" : {
+    "AdamId" : "908623207",
+    "BundleId" : "com.creditease.yidingying",
+    "Version" : "7.12.1",
+    "IsBeta" : false,
+    "Build" : "352",
+    "PlatformSDKIdentifier" : "com.apple.platform.iphoneos",
+    "RootBuild" : "352",
+    "RootVersion" : "7.12.1",
+    "CrashPointId" : "3bFvBQTNKaYhg8BxgH9my"
+  },
+  "SourceLine" : 62,
+  "SourceFile" : "MessageQueueBySqlite.m"
+}
