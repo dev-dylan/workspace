@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44C7234FF39979888159CFF5 /* libPods-FDDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B881A42D514A583A7E432E9 /* libPods-FDDemo.a */; };
+		86300796AEF08CDF39362027 /* libPods-FDDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B881A42D514A583A7E432E9 /* libPods-FDDemo.a */; };
 		FC1F9B4F2384E49E00C483AA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1F9B4E2384E49E00C483AA /* FirstViewController.m */; };
 		FC2BC95F246941DA00DCBE32 /* container in Resources */ = {isa = PBXBuildFile; fileRef = FC2BC95E246941DA00DCBE32 /* container */; };
 		FC2E87CB239E5A6900F84860 /* BaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E87CA239E5A6900F84860 /* BaseAdapter.m */; };
@@ -16,9 +16,7 @@
 		FC39690824FA41880086E1BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39690024FA41880086E1BD /* main.m */; };
 		FC39690C24FA427C0086E1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3968F824FA41870086E1BD /* Assets.xcassets */; };
 		FC39690D24FA427C0086E1BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC3968F924FA41870086E1BD /* GoogleService-Info.plist */; };
-		FC7427A425C149900086CCC7 /* ZXID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC74279F25C149900086CCC7 /* ZXID.framework */; };
-		FC7427A525C149900086CCC7 /* libCAIDSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7427A025C149900086CCC7 /* libCAIDSDK.a */; };
-		FC7427A625C149900086CCC7 /* libReYunTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7427A325C149900086CCC7 /* libReYunTracking.a */; };
+		FC4FDA1C25E4E15100266A70 /* LibCAIDSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4FD9F225E4DDCA00266A70 /* LibCAIDSDK.a */; };
 		FC7427A725C14E960086CCC7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7A1F16238F691C0058C88E /* AdSupport.framework */; };
 		FC7427A825C14EC40086CCC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4BA23BDE03A008F92E0 /* SystemConfiguration.framework */; };
 		FC7427AA25C14ED30086CCC7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7427A925C14ED30086CCC7 /* CoreMotion.framework */; };
@@ -127,11 +125,7 @@
 		FC39690024FA41880086E1BD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC39690124FA41880086E1BD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FC39690324FA41880086E1BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC74279F25C149900086CCC7 /* ZXID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZXID.framework; sourceTree = "<group>"; };
-		FC7427A025C149900086CCC7 /* libCAIDSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCAIDSDK.a; sourceTree = "<group>"; };
-		FC7427A125C149900086CCC7 /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracking.h; sourceTree = "<group>"; };
-		FC7427A225C149900086CCC7 /* CAID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAID.h; sourceTree = "<group>"; };
-		FC7427A325C149900086CCC7 /* libReYunTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libReYunTracking.a; sourceTree = "<group>"; };
+		FC4FD9F225E4DDCA00266A70 /* LibCAIDSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LibCAIDSDK.a; path = ExtraFeature/CAID/LibCAIDSDK.a; sourceTree = "<group>"; };
 		FC7427A925C14ED30086CCC7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FC7427AD25C14EF70086CCC7 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		FC7427AE25C14EFE0086CCC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -300,13 +294,11 @@
 				FCFA13AE25A5CFCF0047C6E0 /* AssetsLibrary.framework in Frameworks */,
 				FCFA13AC25A5CFC90047C6E0 /* CoreTelephony.framework in Frameworks */,
 				FC7427A725C14E960086CCC7 /* AdSupport.framework in Frameworks */,
-				FC7427A425C149900086CCC7 /* ZXID.framework in Frameworks */,
 				FCFA13AA25A5CFC30047C6E0 /* QuickLook.framework in Frameworks */,
 				FCFA13A725A5CFBC0047C6E0 /* libc++.tbd in Frameworks */,
 				FC7427AA25C14ED30086CCC7 /* CoreMotion.framework in Frameworks */,
 				FCFA13A525A5CFB30047C6E0 /* CoreGraphics.framework in Frameworks */,
 				FCFA13A325A5CFAC0047C6E0 /* QuartzCore.framework in Frameworks */,
-				FC7427A525C149900086CCC7 /* libCAIDSDK.a in Frameworks */,
 				FCFA13A125A5CFA60047C6E0 /* CoreText.framework in Frameworks */,
 				FCFA139F25A5CF9F0047C6E0 /* OpenGLES.framework in Frameworks */,
 				FCFA139D25A5CF990047C6E0 /* GLKit.framework in Frameworks */,
@@ -320,7 +312,6 @@
 				FCFA131925A5CEFE0047C6E0 /* liblibIO.a in Frameworks */,
 				FC7427A825C14EC40086CCC7 /* SystemConfiguration.framework in Frameworks */,
 				FCFA132325A5CEFE0047C6E0 /* liblibNativeObj.a in Frameworks */,
-				FC7427A625C149900086CCC7 /* libReYunTracking.a in Frameworks */,
 				FCFA131C25A5CEFE0047C6E0 /* liblibNativeUI.a in Frameworks */,
 				FCFA132125A5CEFE0047C6E0 /* liblibNavigator.a in Frameworks */,
 				FCFA131B25A5CEFE0047C6E0 /* liblibPDRCore.a in Frameworks */,
@@ -335,10 +326,11 @@
 				FC98E143251B1F630005BDFD /* AppTrackingTransparency.framework in Frameworks */,
 				FCF04B56230BDD5A00AE7C48 /* iAd.framework in Frameworks */,
 				FC90C4BB23BDE03B008F92E0 /* SystemConfiguration.framework in Frameworks */,
-				44C7234FF39979888159CFF5 /* libPods-FDDemo.a in Frameworks */,
 				FC90C4B923BDE031008F92E0 /* CoreSpotlight.framework in Frameworks */,
 				FC90C4BD23BDE042008F92E0 /* Security.framework in Frameworks */,
 				FC90C4B823BDDFC1008F92E0 /* CoreSpotlight.framework in Frameworks */,
+				FC4FDA1C25E4E15100266A70 /* LibCAIDSDK.a in Frameworks */,
+				86300796AEF08CDF39362027 /* libPods-FDDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +369,7 @@
 				0B881A42D514A583A7E432E9 /* libPods-FDDemo.a */,
 				FC13A661253DA71E0003BBCF /* WidgetKit.framework */,
 				FC13A663253DA71E0003BBCF /* SwiftUI.framework */,
+				FC4FD9F225E4DDCA00266A70 /* LibCAIDSDK.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -448,18 +441,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		FC74279E25C149900086CCC7 /* trackingIO */ = {
-			isa = PBXGroup;
-			children = (
-				FC74279F25C149900086CCC7 /* ZXID.framework */,
-				FC7427A025C149900086CCC7 /* libCAIDSDK.a */,
-				FC7427A125C149900086CCC7 /* Tracking.h */,
-				FC7427A225C149900086CCC7 /* CAID.h */,
-				FC7427A325C149900086CCC7 /* libReYunTracking.a */,
-			);
-			path = trackingIO;
-			sourceTree = "<group>";
-		};
 		FC7427B325C150360086CCC7 /* TrackingIO */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,7 +485,6 @@
 			isa = PBXGroup;
 			children = (
 				FC2BC95E246941DA00DCBE32 /* container */,
-				FC74279E25C149900086CCC7 /* trackingIO */,
 				FCFA106F25A5CEFC0047C6E0 /* UniMPSDK */,
 				FC9BBA3722B76FE90080298C /* FDDemo */,
 				FC9BBA3622B76FE90080298C /* Products */,
@@ -1050,6 +1030,8 @@
 					"$(PROJECT_DIR)/UniMPSDK/Core/Libs",
 					"$(PROJECT_DIR)/UniMPSDK/Features/Libs",
 					"$(PROJECT_DIR)/trackingIO",
+					"$(PROJECT_DIR)/FDDemo/CAID",
+					"$(PROJECT_DIR)/ExtraFeature/CAID",
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.productExperience;
@@ -1104,6 +1086,8 @@
 					"$(PROJECT_DIR)/UniMPSDK/Core/Libs",
 					"$(PROJECT_DIR)/UniMPSDK/Features/Libs",
 					"$(PROJECT_DIR)/trackingIO",
+					"$(PROJECT_DIR)/FDDemo/CAID",
+					"$(PROJECT_DIR)/ExtraFeature/CAID",
 				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.productExperience;

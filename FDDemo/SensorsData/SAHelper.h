@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setupSensorsAnalytics:(NSDictionary *)launchOptions;
 + (void)track:(NSString *)event properties:(NSDictionary *)properties;
 + (void)trackViewScreen:(UIViewController *)controller properties:(NSDictionary *)properties;
+
++ (void)login:(NSString *)loginId;
++ (void)flush;
++ (void)profileUnset:(NSString *)key;
 
 + (BOOL)canOpenURL:(NSURL *)url;
 

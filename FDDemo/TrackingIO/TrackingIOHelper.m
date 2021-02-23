@@ -7,10 +7,10 @@
 //
 
 #import "TrackingIOHelper.h"
-#import "Tracking.h"
-#import "CAID.h"
+//#import "Tracking.h"
+//#import "CAID.h"
 
-@interface TrackingIOHelper () <CAIDUpdateProtocol>
+@interface TrackingIOHelper () 
 
 @end
 
@@ -26,9 +26,9 @@
 }
 
 + (void)start {
-    [[TrackingIOHelper sharedInstance] start];
+//    [[TrackingIOHelper sharedInstance] start];
 }
-
+/*
 - (void)start {
     [Tracking initWithAppKey:@"f4c6764d10bec9a3c4bd4f79a442a947" withChannelId:@"_default_"];
     [Tracking setCAIDUpdateCallbackDelegate:self];
@@ -44,5 +44,5 @@
     NSString *currentId = [Tracking getCurrentCaid];
     NSLog(@"\n ####################\n deviceId: %@; \n caid: %@; \n currentId: %@; \n ####################", deviceId, caid, currentId);
 }
-
+*/
 @end

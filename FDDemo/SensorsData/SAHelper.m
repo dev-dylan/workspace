@@ -26,20 +26,33 @@ static NSString* DeepLinkURL = @"https://sachannledata.debugbox.sensorsdata.cn:8
 
 static BOOL enable = NO;
 
+static void (*orig_NSLog)(NSString *format, ...);
+void(new_NSLog)(NSString *format, ...) {
+    va_list args;
+    if(format) {
+        va_start(args, format);
+        NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
+        orig_NSLog(@"%@", message);
+        va_end(args);
+    }
+}
+
+// 初始化方法里进行替换
 + (void)setupSensorsAnalytics:(NSDictionary *)launchOptions {
+//    rebind_symbols((struct rebinding[1]){{"NSLog", new_NSLog, (void *)&orig_NSLog}}, 1);
 #ifdef ENABLE_SENSORS_ANALYTICS
     enable = YES;
 
     SAConfigOptions *configOptions = [[SAConfigOptions alloc]initWithServerURL:Sa_Default_ServerURL launchOptions:launchOptions];
-//    configOptions.autoTrackEventType = SensorsAnalyticsEventTypeAppStart| SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppViewScreen | SensorsAnalyticsEventTypeAppClick;
+    configOptions.autoTrackEventType = -4;
     configOptions.enableTrackAppCrash = YES;
     configOptions.disableRandomTimeRequestRemoteConfig = YES;
 //    configOptions.enableHeatMap = YES;
 //
 //    configOptions.enableVisualizedAutoTrack = YES;
-    configOptions.enableAutoAddChannelCallbackEvent = YES;
+//    configOptions.enableAutoAddChannelCallbackEvent = YES;
     configOptions.enableLog = YES;
-    configOptions.enableReferrerTitle = YES;
+    configOptions.enableTrackPush = YES;
 //    configOptions.enableEncrypt = YES;
 //    configOptions.enableSaveUtm = YES;
 //    configOptions.sourceChannels = @[@"key1", @"key2"];
@@ -50,7 +63,7 @@ static BOOL enable = NO;
     SensorsAnalyticsSDK *sdk = [SensorsAnalyticsSDK sharedInstance];
 //    [sdk enableLog:YES];
 //    [sdk identify:@"AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA"];
-//    [sdk registerSuperProperties:@{@"AAA":[[NSUUID UUID] UUIDString]}];
+    [sdk registerSuperProperties:NULL];
     [sdk setCookie:@"测试123" withEncode:YES];
 //    [sdk registerDynamicSuperProperties:^NSDictionary<NSString *,id> * _Nonnull{
 //        __block UIApplicationState appState;
@@ -108,6 +121,18 @@ static BOOL enable = NO;
     }
 #endif
     return NO;
+}
+
++ (void)login:(NSString *)loginId {
+    [[SensorsAnalyticsSDK sharedInstance] login:loginId];
+}
+
++ (void)flush {
+    [[SensorsAnalyticsSDK sharedInstance] flush];
+}
+
++ (void)profileUnset:(NSString *)key {
+    [[SensorsAnalyticsSDK sharedInstance] unset:key];
 }
 
 + (void)trackViewScreen:(UIViewController *)controller properties:(NSDictionary *)properties {

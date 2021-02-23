@@ -37,6 +37,7 @@
 
 + (void)registerRemoteNotification {
     [[GPushHelper sharedInstance] registerRemoteNotification];
+
 }
 
 - (void)setupGTSDK {
@@ -89,7 +90,8 @@
 - (void)GeTuiSdkDidRegisterClient:(NSString *)clientId {
     //个推SDK已注册，返回clientId
     NSLog(@"\n>>>[GeTuiSdk RegisterClient]:%@\n\n", clientId);
-    // 23349737206369a17b269e8254a951ac
+    // dylan: 23349737206369a17b269e8254a951ac
+    // 6s: c90532baf25070eef9d86458157f730c
 }
 
 @end

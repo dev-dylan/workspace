@@ -21,7 +21,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     NSUserActivity *user = connectionOptions.userActivities.allObjects.firstObject;
     UIOpenURLContext *urlContext = connectionOptions.URLContexts.allObjects.firstObject;
-    [self initSASDK:connectionOptions];
+    [self initSASDK:nil];
 }
 
 - (void)initSASDK:(id)launchOptions {

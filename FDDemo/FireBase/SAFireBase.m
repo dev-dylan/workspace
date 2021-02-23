@@ -7,29 +7,29 @@
 //
 
 #import "SAFireBase.h"
-#import <Firebase/Firebase.h>
-#import <FirebaseAnalytics/FirebaseAnalytics.h>
+//#import <Firebase/Firebase.h>
+//#import <FirebaseAnalytics/FirebaseAnalytics.h>
 
 @implementation SAFireBase
 
 + (void)configure {
-    [FIRApp configure];
-
-    [SAFireBase logEventWithName:@"AppStart" parameters:@{
-    kFIRParameterItemID:[NSString stringWithFormat:@"id-%@", @"AppStart"],
-    kFIRParameterItemName:@"AppStart",
-    kFIRParameterContentType:@"AppStart"
-    }];
-
-    [SAFireBase logEventWithName:@"LogEvent" parameters:@{
-    kFIRParameterItemID:[NSString stringWithFormat:@"id-%@", @"LogEvent"],
-    kFIRParameterItemName:@"LogEvent",
-    kFIRParameterContentType:@"LogEvent"
-    }];
+//    [FIRApp configure];
+//
+//    [SAFireBase logEventWithName:@"AppStart" parameters:@{
+//    kFIRParameterItemID:[NSString stringWithFormat:@"id-%@", @"AppStart"],
+//    kFIRParameterItemName:@"AppStart",
+//    kFIRParameterContentType:@"AppStart"
+//    }];
+//
+//    [SAFireBase logEventWithName:@"LogEvent" parameters:@{
+//    kFIRParameterItemID:[NSString stringWithFormat:@"id-%@", @"LogEvent"],
+//    kFIRParameterItemName:@"LogEvent",
+//    kFIRParameterContentType:@"LogEvent"
+//    }];
 }
 
 + (void)logEventWithName:(NSString *)name parameters:(NSDictionary *)parameters {
-    [FIRAnalytics logEventWithName:name parameters:parameters];
+//    [FIRAnalytics logEventWithName:name parameters:parameters];
 }
 
 @end

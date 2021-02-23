@@ -92,7 +92,8 @@
 
     [JPUSHService registrationIDCompletionHandler:^(int resCode, NSString *registrationID) {
         NSLog(@"========= registrationID: %@", registrationID);
-        // 141fe1da9e17f8c515d
+        // Dylan: 1114a897920b5bb0761
+        // 6S: 1a1018970a0178ae61e
     }];
 }
 

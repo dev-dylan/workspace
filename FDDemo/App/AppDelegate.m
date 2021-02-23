@@ -18,7 +18,7 @@
 #import "FDSwizzle.h"
 #import "FDUniAppHelper.h"
 #import "TrackingIOHelper.h"
-
+#import "CAIDHelper.h"
 @interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @property (nonatomic, strong) NSPredicate *regexTestName;
@@ -28,18 +28,12 @@
 @property (nonatomic, assign) NSInteger num;
 
 @end
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     // Log Class Methods
 //    [CommonUtil LogCurrentClassMethods:self];
-
-    NSDictionary *di1 = nil;
-    NSMutableDictionary *dic2 = [NSMutableDictionary dictionaryWithDictionary:di1];
-    dic2[@"234"] = @"1231";
-    NSLog(@"========= %@", dic2);
 
 //    [TrackingIOHelper start];
 
@@ -54,10 +48,10 @@
 //    [GIOHelper setupGrowingIO];
 
     // 极光 SDK
-//    [JPushHelper startJPush:launchOptions];
+    [JPushHelper startJPush:launchOptions];
 
     //个推 SDK
-//    [ GPushHelper setupGTSDK];
+//    [GPushHelper setupGTSDK];
     
     // LinkedMe SDK
 //    [[LinkedMeHelper sharedInstance] setupLinkedMe:launchOptions];
@@ -98,8 +92,8 @@
 #pragma mark - Push Nitification
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [self getDeviceTokenString:deviceToken];
-//    [JPushHelper registerDeviceToken:deviceToken];
-    [GPushHelper registerDeviceTokenData:deviceToken];
+    [JPushHelper registerDeviceToken:deviceToken];
+//    [GPushHelper registerDeviceTokenData:deviceToken];
 }
 
 - (void)getDeviceTokenString:(NSData *)deviceToken {
@@ -113,17 +107,17 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-//    [JPushHelper handleRemoteNotification:userInfo];
+    [JPushHelper handleRemoteNotification:userInfo];
     NSLog(@"收到远程通知 iOS7 ~ NEW ----%@", userInfo);
-    [GPushHelper handleRemoteNotification:userInfo];
+//    [GPushHelper handleRemoteNotification:userInfo];
     completionHandler(UIBackgroundFetchResultNewData);
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     // Required, For systems with less than or equal to iOS 6
     NSLog(@"收到远程通知 iOS3 ~ iOS10 ----%@", userInfo);
-//    [JPushHelper handleRemoteNotification:userInfo];
-    [GPushHelper handleRemoteNotification:userInfo];
+    [JPushHelper handleRemoteNotification:userInfo];
+//    [GPushHelper handleRemoteNotification:userInfo];
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
