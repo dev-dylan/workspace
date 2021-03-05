@@ -8,10 +8,10 @@
 
 #import "SAHelper.h"
 #import "SAPermissions.h"
+//#import "CAID.h"
 
-#ifdef ENABLE_SENSORS_ANALYTICS
-#import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
-#endif
+#if __has_include("SensorsAnalyticsSDK.h")
+#import "SensorsAnalyticsSDK.h"
 
 static NSString* Sa_Default_ServerURL = @"http://newsdktest.datasink.sensorsdata.cn/sa?project=pengyuanyang&token=5a394d2405c147ca";
 static NSString* ChannelDebugURL = @"http://10.120.70.67:8106/sa?project=default";
@@ -40,7 +40,6 @@ void(new_NSLog)(NSString *format, ...) {
 // 初始化方法里进行替换
 + (void)setupSensorsAnalytics:(NSDictionary *)launchOptions {
 //    rebind_symbols((struct rebinding[1]){{"NSLog", new_NSLog, (void *)&orig_NSLog}}, 1);
-#ifdef ENABLE_SENSORS_ANALYTICS
     enable = YES;
 
     SAConfigOptions *configOptions = [[SAConfigOptions alloc]initWithServerURL:Sa_Default_ServerURL launchOptions:launchOptions];
@@ -52,7 +51,7 @@ void(new_NSLog)(NSString *format, ...) {
 //    configOptions.enableVisualizedAutoTrack = YES;
 //    configOptions.enableAutoAddChannelCallbackEvent = YES;
     configOptions.enableLog = YES;
-    configOptions.enableTrackPush = YES;
+//    configOptions.enableTrackPush = YES;
 //    configOptions.enableEncrypt = YES;
 //    configOptions.enableSaveUtm = YES;
 //    configOptions.sourceChannels = @[@"key1", @"key2"];
@@ -77,9 +76,16 @@ void(new_NSLog)(NSString *format, ...) {
 //        return @{@"__APPState__":@(appState)};
 //
 //    }];
-    [SAPermissions userTrackingAuthorization:^(NSString * _Nonnull idfa) {
-        [[SensorsAnalyticsSDK sharedInstance] trackInstallation:@"AppInstall" withProperties:@{}];
-    }];
+//    [SAPermissions userTrackingAuthorization:^(NSString * _Nonnull idfa) {
+//        NSDictionary *caidInfo = @{@"caid1":@"xxx111", @"version1":@20200901, @"lastCaid1":@"xxx222", @"lastCaidVersion1":@20201201};
+//        [[SensorsAnalyticsSDK sharedInstance] trackInstallation:@"AppInstall" withProperties:@{@"sensorsAnalyticsCaidInfo":caidInfo}];
+//    }];
+
+//    CAID *caid = [CAID initCAID:@"" pubKey:@""];
+//    [caid getCAIDAsyncly:^(CAIDError * _Nonnull error, CAIDStruct * _Nonnull caidStruct) {
+//        NSDictionary *caidInfo = @{@"caid1":@"xxx111", @"version1":@20200901, @"lastCaid1":@"xxx222", @"lastCaidVersion1":@20201201};
+//        [[SensorsAnalyticsSDK sharedInstance] trackInstallation:@"AppInstall" withProperties:@{@"sensorsAnalyticsCaidInfo":caidInfo}];
+//    }];
 
 //    [SAPermissions photoLibraryAuthorization:^{
 //        NSLog(@"========= photo library authorization !!!!");
@@ -92,26 +98,20 @@ void(new_NSLog)(NSString *format, ...) {
     dispatch_queue_t queue = dispatch_queue_create("kk", DISPATCH_QUEUE_SERIAL);
 
     // 防止循环引用 使用 __weak 修饰
-    __weak typeof(self)weakSelf = self;
     dispatch_async(queue, ^{
-        [sdk enableTrackGPSLocation:YES];
-        [sdk enableTrackScreenOrientation:YES];
+//        [sdk enableTrackGPSLocation:YES];
+//        [sdk enableTrackScreenOrientation:YES];
     });
-
-#endif
 }
 
 + (void)track:(NSString *)event properties:(NSDictionary *)properties {
-#ifdef ENABLE_SENSORS_ANALYTICS
     if (!enable) {
         return;
     }
     [[SensorsAnalyticsSDK sharedInstance] track:event withProperties:properties];
-#endif
 }
 
 + (BOOL)canOpenURL:(NSURL *)url {
-#ifdef ENABLE_SENSORS_ANALYTICS
     if (!enable) {
         return NO;
     }
@@ -119,7 +119,6 @@ void(new_NSLog)(NSString *format, ...) {
         [[SensorsAnalyticsSDK sharedInstance] handleSchemeUrl:url];
         return YES;
     }
-#endif
     return NO;
 }
 
@@ -136,10 +135,22 @@ void(new_NSLog)(NSString *format, ...) {
 }
 
 + (void)trackViewScreen:(UIViewController *)controller properties:(NSDictionary *)properties {
-#ifdef ENABLE_SENSORS_ANALYTICS
     [[SensorsAnalyticsSDK sharedInstance] trackViewScreen:controller properties:properties];
-#endif
-
 }
 
 @end
+
+#else
+
+@implementation SAHelper
+
++ (void)setupSensorsAnalytics:(NSDictionary *)launchOptions{}
++ (void)track:(NSString *)event properties:(NSDictionary *)properties{}
++ (void)trackViewScreen:(UIViewController *)controller properties:(NSDictionary *)properties{}
++ (void)login:(NSString *)loginId{}
++ (void)flush{}
++ (void)profileUnset:(NSString *)key{}
++ (BOOL)canOpenURL:(NSURL *)url{return NO;}
+
+@end
+#endif

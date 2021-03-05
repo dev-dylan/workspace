@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:newsdktest.cloud.sensorsdata.cn</string>
+		<string>applinks:satdemodata.debugbox.sensorsdata.cn</string>
 	</array>
 </dict>
 </plist>

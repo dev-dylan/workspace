@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86300796AEF08CDF39362027 /* libPods-FDDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B881A42D514A583A7E432E9 /* libPods-FDDemo.a */; };
+		A856FCC6E9681EC6842DC776 /* Pods_FDDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE287300E1E21754556E985 /* Pods_FDDemo.framework */; };
 		FC1F9B4F2384E49E00C483AA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1F9B4E2384E49E00C483AA /* FirstViewController.m */; };
 		FC2BC95F246941DA00DCBE32 /* container in Resources */ = {isa = PBXBuildFile; fileRef = FC2BC95E246941DA00DCBE32 /* container */; };
-		FC2E87CB239E5A6900F84860 /* BaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E87CA239E5A6900F84860 /* BaseAdapter.m */; };
-		FC2E87CE239E5BCA00F84860 /* SecondAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E87CD239E5BCA00F84860 /* SecondAdapter.m */; };
-		FC2E87D1239E5D3400F84860 /* FirstAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E87D0239E5D3400F84860 /* FirstAdapter.m */; };
 		FC39690824FA41880086E1BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39690024FA41880086E1BD /* main.m */; };
 		FC39690C24FA427C0086E1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3968F824FA41870086E1BD /* Assets.xcassets */; };
 		FC39690D24FA427C0086E1BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC3968F924FA41870086E1BD /* GoogleService-Info.plist */; };
-		FC4FDA1C25E4E15100266A70 /* LibCAIDSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4FD9F225E4DDCA00266A70 /* LibCAIDSDK.a */; };
 		FC7427A725C14E960086CCC7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7A1F16238F691C0058C88E /* AdSupport.framework */; };
 		FC7427A825C14EC40086CCC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4BA23BDE03A008F92E0 /* SystemConfiguration.framework */; };
 		FC7427AA25C14ED30086CCC7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7427A925C14ED30086CCC7 /* CoreMotion.framework */; };
@@ -24,23 +20,37 @@
 		FC7427AC25C14EE90086CCC7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139825A5CF8A0047C6E0 /* AVFoundation.framework */; };
 		FC7427AF25C14EFE0086CCC7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7427AE25C14EFE0086CCC7 /* CFNetwork.framework */; };
 		FC7427B025C14F050086CCC7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4BE23BDE04A008F92E0 /* WebKit.framework */; };
-		FC7427B625C150490086CCC7 /* TrackingIOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7427B525C150490086CCC7 /* TrackingIOHelper.m */; };
-		FC86E5E624FA3C52006FDDA8 /* SAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86E5E024FA3C52006FDDA8 /* SAHelper.m */; };
-		FC86E5E724FA3C52006FDDA8 /* SAFireBaseCustomFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86E5E224FA3C52006FDDA8 /* SAFireBaseCustomFunction.m */; };
-		FC86E5E824FA3C52006FDDA8 /* SAFireBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86E5E524FA3C52006FDDA8 /* SAFireBase.m */; };
+		FC80B33B25F209DB00A0A70C /* TrackingIOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B31D25F209DB00A0A70C /* TrackingIOHelper.m */; };
+		FC80B33C25F209DB00A0A70C /* SensorsAnalyticsSDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32025F209DB00A0A70C /* SensorsAnalyticsSDKWrapper.m */; };
+		FC80B33D25F209DB00A0A70C /* SFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32125F209DB00A0A70C /* SFHelper.m */; };
+		FC80B33E25F209DB00A0A70C /* SAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32325F209DB00A0A70C /* SAHelper.m */; };
+		FC80B33F25F209DB00A0A70C /* GPushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32625F209DB00A0A70C /* GPushHelper.m */; };
+		FC80B34025F209DB00A0A70C /* JPushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32925F209DB00A0A70C /* JPushHelper.m */; };
+		FC80B34125F209DB00A0A70C /* SAFireBaseCustomFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32B25F209DB00A0A70C /* SAFireBaseCustomFunction.m */; };
+		FC80B34225F209DB00A0A70C /* SAFireBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B32E25F209DB00A0A70C /* SAFireBase.m */; };
+		FC80B34325F209DB00A0A70C /* BUADHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33025F209DB00A0A70C /* BUADHelper.m */; };
+		FC80B34425F209DB00A0A70C /* GIOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33325F209DB00A0A70C /* GIOHelper.m */; };
+		FC80B34525F209DB00A0A70C /* LinkedMeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33625F209DB00A0A70C /* LinkedMeHelper.m */; };
+		FC80B34625F209DB00A0A70C /* FDUniAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33925F209DB00A0A70C /* FDUniAppHelper.m */; };
 		FC86E5EC24FA3CAA006FDDA8 /* SAPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86E5EB24FA3CAA006FDDA8 /* SAPermissions.m */; };
 		FC90C4B823BDDFC1008F92E0 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */; };
 		FC90C4B923BDE031008F92E0 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */; };
-		FC90C4BB23BDE03B008F92E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4BA23BDE03A008F92E0 /* SystemConfiguration.framework */; };
 		FC90C4BD23BDE042008F92E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4BC23BDE042008F92E0 /* Security.framework */; };
-		FC90C4BF23BDE04A008F92E0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4BE23BDE04A008F92E0 /* WebKit.framework */; };
 		FC98E143251B1F630005BDFD /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3968F224FA3F430086E1BD /* AppTrackingTransparency.framework */; };
 		FC9BBA3A22B76FE90080298C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9BBA3922B76FE90080298C /* AppDelegate.m */; };
 		FC9BBA3D22B76FE90080298C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9BBA3C22B76FE90080298C /* SecondViewController.m */; };
+		FCA11CD925E7789000ABC51E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CD825E7789000ABC51E /* MobileCoreServices.framework */; };
+		FCA11CDB25E778D100ABC51E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CDA25E778D100ABC51E /* Accelerate.framework */; };
+		FCA11CDD25E778DC00ABC51E /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CDC25E778DB00ABC51E /* libresolv.9.tbd */; };
+		FCA11CE025E778F200ABC51E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CDF25E778F200ABC51E /* libz.tbd */; };
+		FCA11CE325E7790400ABC51E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CE225E7790400ABC51E /* libsqlite3.tbd */; };
+		FCA11CE625E7790C00ABC51E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CE525E7790C00ABC51E /* libbz2.tbd */; };
+		FCA11CE925E7791300ABC51E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CE825E7791300ABC51E /* libxml2.tbd */; };
+		FCA11CEC25E7792500ABC51E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA11CEB25E7792500ABC51E /* libiconv.tbd */; };
 		FCA4A60824FA438C00B5FFDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3968FC24FA41870086E1BD /* LaunchScreen.storyboard */; };
 		FCA4A60924FA438C00B5FFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3968FE24FA41870086E1BD /* Main.storyboard */; };
+		FCAAD67125E5F56300A03122 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAAD67025E5F56300A03122 /* StoreKit.framework */; };
 		FCF04B56230BDD5A00AE7C48 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF04B55230BDD5900AE7C48 /* iAd.framework */; };
-		FCF6D68724E3D30B0080D6FB /* SensorsAnalyticsSDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6D68624E3D30B0080D6FB /* SensorsAnalyticsSDKWrapper.m */; };
 		FCFA131225A5CEFE0047C6E0 /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = FCFA107325A5CEFC0047C6E0 /* __uniappes6.js */; };
 		FCFA131325A5CEFE0047C6E0 /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = FCFA107425A5CEFC0047C6E0 /* uni-jsframework.js */; };
 		FCFA131425A5CEFE0047C6E0 /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCFA107525A5CEFC0047C6E0 /* PandoraApi.bundle */; };
@@ -62,7 +72,6 @@
 		FCFA139325A5CF5D0047C6E0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139225A5CF5D0047C6E0 /* JavaScriptCore.framework */; };
 		FCFA139525A5CF7B0047C6E0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139425A5CF7B0047C6E0 /* CoreMedia.framework */; };
 		FCFA139725A5CF840047C6E0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139625A5CF840047C6E0 /* MediaPlayer.framework */; };
-		FCFA139925A5CF8A0047C6E0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139825A5CF8A0047C6E0 /* AVFoundation.framework */; };
 		FCFA139B25A5CF910047C6E0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139A25A5CF910047C6E0 /* AVKit.framework */; };
 		FCFA139D25A5CF990047C6E0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139C25A5CF990047C6E0 /* GLKit.framework */; };
 		FCFA139F25A5CF9F0047C6E0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139E25A5CF9F0047C6E0 /* OpenGLES.framework */; };
@@ -75,14 +84,8 @@
 		FCFA13AE25A5CFCF0047C6E0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA13AD25A5CFCF0047C6E0 /* AssetsLibrary.framework */; };
 		FCFA13B025A5CFD50047C6E0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA13AF25A5CFD50047C6E0 /* CoreLocation.framework */; };
 		FCFA13B225A5CFDB0047C6E0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA13B125A5CFDB0047C6E0 /* AddressBook.framework */; };
-		FCFA13BA25A5D4920047C6E0 /* FDUniAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFA13B925A5D4920047C6E0 /* FDUniAppHelper.m */; };
 		FCFA140125A6E0490047C6E0 /* __UNI__8DD0904.wgt in Resources */ = {isa = PBXBuildFile; fileRef = FCFA140025A6E0490047C6E0 /* __UNI__8DD0904.wgt */; };
-		FCFDEA6925830FC00095974C /* LinkedMeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA6825830FC00095974C /* LinkedMeHelper.m */; };
-		FCFDEA71258312920095974C /* GIOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA70258312920095974C /* GIOHelper.m */; };
-		FCFDEA76258312D30095974C /* JPushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA75258312D30095974C /* JPushHelper.m */; };
 		FCFDEA7B2583139E0095974C /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA7A2583139E0095974C /* CommonUtil.m */; };
-		FCFDEA812583181C0095974C /* SFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA802583181C0095974C /* SFHelper.m */; };
-		FCFDEAA1258325670095974C /* GPushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEAA0258325670095974C /* GPushHelper.m */; };
 		FCFDEAA5258352440095974C /* AppDelegate+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEAA4258352440095974C /* AppDelegate+Hook.m */; };
 		FCFDEAA92583529E0095974C /* FDSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEAA82583529E0095974C /* FDSwizzle.m */; };
 /* End PBXBuildFile section */
@@ -101,21 +104,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B881A42D514A583A7E432E9 /* libPods-FDDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FDDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7428484F1D4A3D8EE1C27 /* Pods-FDDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDDemo.debug.xcconfig"; path = "Target Support Files/Pods-FDDemo/Pods-FDDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		67A19DE14481264B16DBDEF7 /* Pods-FDDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDDemo.release.xcconfig"; path = "Target Support Files/Pods-FDDemo/Pods-FDDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6AE287300E1E21754556E985 /* Pods_FDDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC005C91257F5DCE008906A7 /* FDDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FDDemo.entitlements; sourceTree = "<group>"; };
 		FC13A661253DA71E0003BBCF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		FC13A663253DA71E0003BBCF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		FC1F9B4D2384E49E00C483AA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		FC1F9B4E2384E49E00C483AA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		FC2BC95E246941DA00DCBE32 /* container */ = {isa = PBXFileReference; lastKnownFileType = folder; path = container; sourceTree = "<group>"; };
-		FC2E87C9239E5A6900F84860 /* BaseAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAdapter.h; sourceTree = "<group>"; };
-		FC2E87CA239E5A6900F84860 /* BaseAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAdapter.m; sourceTree = "<group>"; };
-		FC2E87CC239E5BCA00F84860 /* SecondAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondAdapter.h; sourceTree = "<group>"; };
-		FC2E87CD239E5BCA00F84860 /* SecondAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondAdapter.m; sourceTree = "<group>"; };
-		FC2E87CF239E5D3400F84860 /* FirstAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstAdapter.h; sourceTree = "<group>"; };
-		FC2E87D0239E5D3400F84860 /* FirstAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstAdapter.m; sourceTree = "<group>"; };
 		FC3968F224FA3F430086E1BD /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		FC3968F724FA41870086E1BD /* FDDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FC3968F824FA41870086E1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,19 +122,33 @@
 		FC39690024FA41880086E1BD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC39690124FA41880086E1BD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FC39690324FA41880086E1BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC4FD9F225E4DDCA00266A70 /* LibCAIDSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LibCAIDSDK.a; path = ExtraFeature/CAID/LibCAIDSDK.a; sourceTree = "<group>"; };
 		FC7427A925C14ED30086CCC7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FC7427AD25C14EF70086CCC7 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		FC7427AE25C14EFE0086CCC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		FC7427B425C150490086CCC7 /* TrackingIOHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackingIOHelper.h; sourceTree = "<group>"; };
-		FC7427B525C150490086CCC7 /* TrackingIOHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackingIOHelper.m; sourceTree = "<group>"; };
 		FC7A1F16238F691C0058C88E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		FC86E5DF24FA3C52006FDDA8 /* SAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAHelper.h; sourceTree = "<group>"; };
-		FC86E5E024FA3C52006FDDA8 /* SAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAHelper.m; sourceTree = "<group>"; };
-		FC86E5E224FA3C52006FDDA8 /* SAFireBaseCustomFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFireBaseCustomFunction.m; sourceTree = "<group>"; };
-		FC86E5E324FA3C52006FDDA8 /* SAFireBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFireBase.h; sourceTree = "<group>"; };
-		FC86E5E424FA3C52006FDDA8 /* SAFireBaseCustomFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFireBaseCustomFunction.h; sourceTree = "<group>"; };
-		FC86E5E524FA3C52006FDDA8 /* SAFireBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFireBase.m; sourceTree = "<group>"; };
+		FC80B31D25F209DB00A0A70C /* TrackingIOHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingIOHelper.m; sourceTree = "<group>"; };
+		FC80B31E25F209DB00A0A70C /* TrackingIOHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingIOHelper.h; sourceTree = "<group>"; };
+		FC80B32025F209DB00A0A70C /* SensorsAnalyticsSDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsSDKWrapper.m; sourceTree = "<group>"; };
+		FC80B32125F209DB00A0A70C /* SFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHelper.m; sourceTree = "<group>"; };
+		FC80B32225F209DB00A0A70C /* SAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAHelper.h; sourceTree = "<group>"; };
+		FC80B32325F209DB00A0A70C /* SAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAHelper.m; sourceTree = "<group>"; };
+		FC80B32425F209DB00A0A70C /* SFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHelper.h; sourceTree = "<group>"; };
+		FC80B32625F209DB00A0A70C /* GPushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPushHelper.m; sourceTree = "<group>"; };
+		FC80B32725F209DB00A0A70C /* JPushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPushHelper.h; sourceTree = "<group>"; };
+		FC80B32825F209DB00A0A70C /* GPushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPushHelper.h; sourceTree = "<group>"; };
+		FC80B32925F209DB00A0A70C /* JPushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPushHelper.m; sourceTree = "<group>"; };
+		FC80B32B25F209DB00A0A70C /* SAFireBaseCustomFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFireBaseCustomFunction.m; sourceTree = "<group>"; };
+		FC80B32C25F209DB00A0A70C /* SAFireBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFireBase.h; sourceTree = "<group>"; };
+		FC80B32D25F209DB00A0A70C /* SAFireBaseCustomFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFireBaseCustomFunction.h; sourceTree = "<group>"; };
+		FC80B32E25F209DB00A0A70C /* SAFireBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFireBase.m; sourceTree = "<group>"; };
+		FC80B33025F209DB00A0A70C /* BUADHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUADHelper.m; sourceTree = "<group>"; };
+		FC80B33125F209DB00A0A70C /* BUADHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUADHelper.h; sourceTree = "<group>"; };
+		FC80B33325F209DB00A0A70C /* GIOHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIOHelper.m; sourceTree = "<group>"; };
+		FC80B33425F209DB00A0A70C /* GIOHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOHelper.h; sourceTree = "<group>"; };
+		FC80B33625F209DB00A0A70C /* LinkedMeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedMeHelper.m; sourceTree = "<group>"; };
+		FC80B33725F209DB00A0A70C /* LinkedMeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedMeHelper.h; sourceTree = "<group>"; };
+		FC80B33925F209DB00A0A70C /* FDUniAppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUniAppHelper.m; sourceTree = "<group>"; };
+		FC80B33A25F209DB00A0A70C /* FDUniAppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUniAppHelper.h; sourceTree = "<group>"; };
 		FC86E5EA24FA3CAA006FDDA8 /* SAPermissions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAPermissions.h; sourceTree = "<group>"; };
 		FC86E5EB24FA3CAA006FDDA8 /* SAPermissions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAPermissions.m; sourceTree = "<group>"; };
 		FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
@@ -149,9 +160,17 @@
 		FC9BBA3922B76FE90080298C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC9BBA3B22B76FE90080298C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FC9BBA3C22B76FE90080298C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FCA11CD825E7789000ABC51E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FCA11CDA25E778D100ABC51E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FCA11CDC25E778DB00ABC51E /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		FCA11CDF25E778F200ABC51E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FCA11CE225E7790400ABC51E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FCA11CE525E7790C00ABC51E /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		FCA11CE825E7791300ABC51E /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		FCA11CEB25E7792500ABC51E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		FCAAD67025E5F56300A03122 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FCB837B42360454D00B6B9B4 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FCF04B55230BDD5900AE7C48 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		FCF6D68624E3D30B0080D6FB /* SensorsAnalyticsSDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsSDKWrapper.m; sourceTree = "<group>"; };
 		FCFA107325A5CEFC0047C6E0 /* __uniappes6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = __uniappes6.js; sourceTree = "<group>"; };
 		FCFA107425A5CEFC0047C6E0 /* uni-jsframework.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework.js"; sourceTree = "<group>"; };
 		FCFA107525A5CEFC0047C6E0 /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
@@ -261,21 +280,9 @@
 		FCFA13AD25A5CFCF0047C6E0 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		FCFA13AF25A5CFD50047C6E0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FCFA13B125A5CFDB0047C6E0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		FCFA13B825A5D4920047C6E0 /* FDUniAppHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUniAppHelper.h; sourceTree = "<group>"; };
-		FCFA13B925A5D4920047C6E0 /* FDUniAppHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUniAppHelper.m; sourceTree = "<group>"; };
 		FCFA140025A6E0490047C6E0 /* __UNI__8DD0904.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__8DD0904.wgt; sourceTree = "<group>"; };
-		FCFDEA6725830FC00095974C /* LinkedMeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedMeHelper.h; sourceTree = "<group>"; };
-		FCFDEA6825830FC00095974C /* LinkedMeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedMeHelper.m; sourceTree = "<group>"; };
-		FCFDEA6F258312920095974C /* GIOHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIOHelper.h; sourceTree = "<group>"; };
-		FCFDEA70258312920095974C /* GIOHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIOHelper.m; sourceTree = "<group>"; };
-		FCFDEA74258312D30095974C /* JPushHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPushHelper.h; sourceTree = "<group>"; };
-		FCFDEA75258312D30095974C /* JPushHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPushHelper.m; sourceTree = "<group>"; };
 		FCFDEA792583139E0095974C /* CommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
 		FCFDEA7A2583139E0095974C /* CommonUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
-		FCFDEA7F2583181C0095974C /* SFHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHelper.h; sourceTree = "<group>"; };
-		FCFDEA802583181C0095974C /* SFHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHelper.m; sourceTree = "<group>"; };
-		FCFDEA9F258325670095974C /* GPushHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPushHelper.h; sourceTree = "<group>"; };
-		FCFDEAA0258325670095974C /* GPushHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPushHelper.m; sourceTree = "<group>"; };
 		FCFDEAA3258352440095974C /* AppDelegate+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Hook.h"; sourceTree = "<group>"; };
 		FCFDEAA4258352440095974C /* AppDelegate+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Hook.m"; sourceTree = "<group>"; };
 		FCFDEAA72583529E0095974C /* FDSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSwizzle.h; sourceTree = "<group>"; };
@@ -287,6 +294,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC90C4BD23BDE042008F92E0 /* Security.framework in Frameworks */,
+				FCA11CEC25E7792500ABC51E /* libiconv.tbd in Frameworks */,
+				FCA11CE925E7791300ABC51E /* libxml2.tbd in Frameworks */,
+				FCA11CE625E7790C00ABC51E /* libbz2.tbd in Frameworks */,
+				FCA11CE325E7790400ABC51E /* libsqlite3.tbd in Frameworks */,
+				FCA11CE025E778F200ABC51E /* libz.tbd in Frameworks */,
+				FCFA13A725A5CFBC0047C6E0 /* libc++.tbd in Frameworks */,
+				FCA11CDD25E778DC00ABC51E /* libresolv.9.tbd in Frameworks */,
+				FCA11CDB25E778D100ABC51E /* Accelerate.framework in Frameworks */,
+				FCA11CD925E7789000ABC51E /* MobileCoreServices.framework in Frameworks */,
 				FCFA13B225A5CFDB0047C6E0 /* AddressBook.framework in Frameworks */,
 				FCFA13B025A5CFD50047C6E0 /* CoreLocation.framework in Frameworks */,
 				FC7427B025C14F050086CCC7 /* WebKit.framework in Frameworks */,
@@ -295,7 +312,6 @@
 				FCFA13AC25A5CFC90047C6E0 /* CoreTelephony.framework in Frameworks */,
 				FC7427A725C14E960086CCC7 /* AdSupport.framework in Frameworks */,
 				FCFA13AA25A5CFC30047C6E0 /* QuickLook.framework in Frameworks */,
-				FCFA13A725A5CFBC0047C6E0 /* libc++.tbd in Frameworks */,
 				FC7427AA25C14ED30086CCC7 /* CoreMotion.framework in Frameworks */,
 				FCFA13A525A5CFB30047C6E0 /* CoreGraphics.framework in Frameworks */,
 				FCFA13A325A5CFAC0047C6E0 /* QuartzCore.framework in Frameworks */,
@@ -303,7 +319,6 @@
 				FCFA139F25A5CF9F0047C6E0 /* OpenGLES.framework in Frameworks */,
 				FCFA139D25A5CF990047C6E0 /* GLKit.framework in Frameworks */,
 				FCFA139B25A5CF910047C6E0 /* AVKit.framework in Frameworks */,
-				FCFA139925A5CF8A0047C6E0 /* AVFoundation.framework in Frameworks */,
 				FCFA139725A5CF840047C6E0 /* MediaPlayer.framework in Frameworks */,
 				FC7427AB25C14EE10086CCC7 /* iAd.framework in Frameworks */,
 				FCFA139525A5CF7B0047C6E0 /* CoreMedia.framework in Frameworks */,
@@ -314,6 +329,7 @@
 				FCFA132325A5CEFE0047C6E0 /* liblibNativeObj.a in Frameworks */,
 				FCFA131C25A5CEFE0047C6E0 /* liblibNativeUI.a in Frameworks */,
 				FCFA132125A5CEFE0047C6E0 /* liblibNavigator.a in Frameworks */,
+				FCAAD67125E5F56300A03122 /* StoreKit.framework in Frameworks */,
 				FCFA131B25A5CEFE0047C6E0 /* liblibPDRCore.a in Frameworks */,
 				FCFA132025A5CEFE0047C6E0 /* liblibPGInvocation.a in Frameworks */,
 				FCFA131F25A5CEFE0047C6E0 /* liblibStorage.a in Frameworks */,
@@ -322,15 +338,11 @@
 				FCFA131A25A5CEFE0047C6E0 /* liblibWeex.a in Frameworks */,
 				FCFA131825A5CEFE0047C6E0 /* libSDWebImage.a in Frameworks */,
 				FCFA132225A5CEFE0047C6E0 /* storage.framework in Frameworks */,
-				FC90C4BF23BDE04A008F92E0 /* WebKit.framework in Frameworks */,
 				FC98E143251B1F630005BDFD /* AppTrackingTransparency.framework in Frameworks */,
 				FCF04B56230BDD5A00AE7C48 /* iAd.framework in Frameworks */,
-				FC90C4BB23BDE03B008F92E0 /* SystemConfiguration.framework in Frameworks */,
 				FC90C4B923BDE031008F92E0 /* CoreSpotlight.framework in Frameworks */,
-				FC90C4BD23BDE042008F92E0 /* Security.framework in Frameworks */,
 				FC90C4B823BDDFC1008F92E0 /* CoreSpotlight.framework in Frameworks */,
-				FC4FDA1C25E4E15100266A70 /* LibCAIDSDK.a in Frameworks */,
-				86300796AEF08CDF39362027 /* libPods-FDDemo.a in Frameworks */,
+				A856FCC6E9681EC6842DC776 /* Pods_FDDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +352,15 @@
 		71CBF6846D77A769CAAC2D48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCA11CEB25E7792500ABC51E /* libiconv.tbd */,
+				FCA11CE825E7791300ABC51E /* libxml2.tbd */,
+				FCA11CE525E7790C00ABC51E /* libbz2.tbd */,
+				FCA11CE225E7790400ABC51E /* libsqlite3.tbd */,
+				FCA11CDF25E778F200ABC51E /* libz.tbd */,
+				FCA11CDC25E778DB00ABC51E /* libresolv.9.tbd */,
+				FCA11CDA25E778D100ABC51E /* Accelerate.framework */,
+				FCA11CD825E7789000ABC51E /* MobileCoreServices.framework */,
+				FCAAD67025E5F56300A03122 /* StoreKit.framework */,
 				FC7427AE25C14EFE0086CCC7 /* CFNetwork.framework */,
 				FC7427AD25C14EF70086CCC7 /* libresolv.tbd */,
 				FC7427A925C14ED30086CCC7 /* CoreMotion.framework */,
@@ -366,10 +387,9 @@
 				FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */,
 				FC7A1F16238F691C0058C88E /* AdSupport.framework */,
 				FCF04B55230BDD5900AE7C48 /* iAd.framework */,
-				0B881A42D514A583A7E432E9 /* libPods-FDDemo.a */,
 				FC13A661253DA71E0003BBCF /* WidgetKit.framework */,
 				FC13A663253DA71E0003BBCF /* SwiftUI.framework */,
-				FC4FD9F225E4DDCA00266A70 /* LibCAIDSDK.a */,
+				6AE287300E1E21754556E985 /* Pods_FDDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -405,27 +425,23 @@
 				FC1F9B4E2384E49E00C483AA /* FirstViewController.m */,
 				FC9BBA3B22B76FE90080298C /* SecondViewController.h */,
 				FC9BBA3C22B76FE90080298C /* SecondViewController.m */,
-				FC2E87CF239E5D3400F84860 /* FirstAdapter.h */,
-				FC2E87D0239E5D3400F84860 /* FirstAdapter.m */,
-				FC2E87CC239E5BCA00F84860 /* SecondAdapter.h */,
-				FC2E87CD239E5BCA00F84860 /* SecondAdapter.m */,
 			);
 			path = Callers;
 			sourceTree = "<group>";
 		};
-		FC47A42F2360278C008F66A1 /* Utils */ = {
+		FC47A42F2360278C008F66A1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				FCF6D68624E3D30B0080D6FB /* SensorsAnalyticsSDKWrapper.m */,
-				FCB837B42360454D00B6B9B4 /* Constants.h */,
+				FC86E5EA24FA3CAA006FDDA8 /* SAPermissions.h */,
+				FC86E5EB24FA3CAA006FDDA8 /* SAPermissions.m */,
+				FCFDEAA3258352440095974C /* AppDelegate+Hook.h */,
+				FCFDEAA4258352440095974C /* AppDelegate+Hook.m */,
 				FCFDEAA72583529E0095974C /* FDSwizzle.h */,
 				FCFDEAA82583529E0095974C /* FDSwizzle.m */,
-				FC2E87C9239E5A6900F84860 /* BaseAdapter.h */,
-				FC2E87CA239E5A6900F84860 /* BaseAdapter.m */,
 				FCFDEA792583139E0095974C /* CommonUtil.h */,
 				FCFDEA7A2583139E0095974C /* CommonUtil.m */,
 			);
-			path = Utils;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FC47A4302360278C008F66A1 /* App */ = {
@@ -433,52 +449,105 @@
 			children = (
 				FC3968F624FA414C0086E1BD /* File */,
 				FC39690324FA41880086E1BD /* Info.plist */,
+				FCB837B42360454D00B6B9B4 /* Constants.h */,
 				FC9BBA3822B76FE90080298C /* AppDelegate.h */,
 				FC9BBA3922B76FE90080298C /* AppDelegate.m */,
-				FCFDEAA3258352440095974C /* AppDelegate+Hook.h */,
-				FCFDEAA4258352440095974C /* AppDelegate+Hook.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		FC7427B325C150360086CCC7 /* TrackingIO */ = {
+		FC80B31B25F209B100A0A70C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				FC7427B425C150490086CCC7 /* TrackingIOHelper.h */,
-				FC7427B525C150490086CCC7 /* TrackingIOHelper.m */,
+				FC80B32F25F209DB00A0A70C /* AD */,
+				FC80B32A25F209DB00A0A70C /* FireBase */,
+				FC80B33225F209DB00A0A70C /* GrowingIO */,
+				FC80B33525F209DB00A0A70C /* LinkedMe */,
+				FC80B32525F209DB00A0A70C /* Push */,
+				FC80B31F25F209DB00A0A70C /* SensorsData */,
+				FC80B31C25F209DB00A0A70C /* TrackingIO */,
+				FC80B33825F209DB00A0A70C /* UniApp */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FC80B31C25F209DB00A0A70C /* TrackingIO */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B31E25F209DB00A0A70C /* TrackingIOHelper.h */,
+				FC80B31D25F209DB00A0A70C /* TrackingIOHelper.m */,
 			);
 			path = TrackingIO;
 			sourceTree = "<group>";
 		};
-		FC86E5DE24FA3C52006FDDA8 /* SensorsData */ = {
+		FC80B31F25F209DB00A0A70C /* SensorsData */ = {
 			isa = PBXGroup;
 			children = (
-				FC86E5DF24FA3C52006FDDA8 /* SAHelper.h */,
-				FC86E5E024FA3C52006FDDA8 /* SAHelper.m */,
-				FCFDEA7F2583181C0095974C /* SFHelper.h */,
-				FCFDEA802583181C0095974C /* SFHelper.m */,
+				FC80B32025F209DB00A0A70C /* SensorsAnalyticsSDKWrapper.m */,
+				FC80B32225F209DB00A0A70C /* SAHelper.h */,
+				FC80B32325F209DB00A0A70C /* SAHelper.m */,
+				FC80B32425F209DB00A0A70C /* SFHelper.h */,
+				FC80B32125F209DB00A0A70C /* SFHelper.m */,
 			);
 			path = SensorsData;
 			sourceTree = "<group>";
 		};
-		FC86E5E124FA3C52006FDDA8 /* FireBase */ = {
+		FC80B32525F209DB00A0A70C /* Push */ = {
 			isa = PBXGroup;
 			children = (
-				FC86E5E424FA3C52006FDDA8 /* SAFireBaseCustomFunction.h */,
-				FC86E5E224FA3C52006FDDA8 /* SAFireBaseCustomFunction.m */,
-				FC86E5E324FA3C52006FDDA8 /* SAFireBase.h */,
-				FC86E5E524FA3C52006FDDA8 /* SAFireBase.m */,
+				FC80B32725F209DB00A0A70C /* JPushHelper.h */,
+				FC80B32925F209DB00A0A70C /* JPushHelper.m */,
+				FC80B32825F209DB00A0A70C /* GPushHelper.h */,
+				FC80B32625F209DB00A0A70C /* GPushHelper.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		FC80B32A25F209DB00A0A70C /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B32C25F209DB00A0A70C /* SAFireBase.h */,
+				FC80B32E25F209DB00A0A70C /* SAFireBase.m */,
+				FC80B32D25F209DB00A0A70C /* SAFireBaseCustomFunction.h */,
+				FC80B32B25F209DB00A0A70C /* SAFireBaseCustomFunction.m */,
 			);
 			path = FireBase;
 			sourceTree = "<group>";
 		};
-		FC86E5E924FA3C76006FDDA8 /* Permissions */ = {
+		FC80B32F25F209DB00A0A70C /* AD */ = {
 			isa = PBXGroup;
 			children = (
-				FC86E5EA24FA3CAA006FDDA8 /* SAPermissions.h */,
-				FC86E5EB24FA3CAA006FDDA8 /* SAPermissions.m */,
+				FC80B33125F209DB00A0A70C /* BUADHelper.h */,
+				FC80B33025F209DB00A0A70C /* BUADHelper.m */,
 			);
-			path = Permissions;
+			path = AD;
+			sourceTree = "<group>";
+		};
+		FC80B33225F209DB00A0A70C /* GrowingIO */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B33425F209DB00A0A70C /* GIOHelper.h */,
+				FC80B33325F209DB00A0A70C /* GIOHelper.m */,
+			);
+			path = GrowingIO;
+			sourceTree = "<group>";
+		};
+		FC80B33525F209DB00A0A70C /* LinkedMe */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B33725F209DB00A0A70C /* LinkedMeHelper.h */,
+				FC80B33625F209DB00A0A70C /* LinkedMeHelper.m */,
+			);
+			path = LinkedMe;
+			sourceTree = "<group>";
+		};
+		FC80B33825F209DB00A0A70C /* UniApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B33A25F209DB00A0A70C /* FDUniAppHelper.h */,
+				FC80B33925F209DB00A0A70C /* FDUniAppHelper.m */,
+			);
+			path = UniApp;
 			sourceTree = "<group>";
 		};
 		FC9BBA2C22B76FE90080298C = {
@@ -504,17 +573,10 @@
 		FC9BBA3722B76FE90080298C /* FDDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FCFA13B725A5D4810047C6E0 /* UniApp */,
 				FC47A4302360278C008F66A1 /* App */,
-				FCFDEA73258312C10095974C /* Push */,
-				FC7427B325C150360086CCC7 /* TrackingIO */,
-				FCFDEA6625830F960095974C /* GrowingIO */,
-				FCFDEA6525830F960095974C /* LinkedMe */,
-				FC86E5E924FA3C76006FDDA8 /* Permissions */,
-				FC86E5E124FA3C52006FDDA8 /* FireBase */,
-				FC86E5DE24FA3C52006FDDA8 /* SensorsData */,
-				FC47A42F2360278C008F66A1 /* Utils */,
 				FC47A42E2360278C008F66A1 /* Callers */,
+				FC80B31B25F209B100A0A70C /* Utility */,
+				FC47A42F2360278C008F66A1 /* Common */,
 			);
 			path = FDDemo;
 			sourceTree = "<group>";
@@ -669,49 +731,11 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		FCFA13B725A5D4810047C6E0 /* UniApp */ = {
-			isa = PBXGroup;
-			children = (
-				FCFA13B825A5D4920047C6E0 /* FDUniAppHelper.h */,
-				FCFA13B925A5D4920047C6E0 /* FDUniAppHelper.m */,
-			);
-			path = UniApp;
-			sourceTree = "<group>";
-		};
 		FCFA13C625A5DB5A0047C6E0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		FCFDEA6525830F960095974C /* LinkedMe */ = {
-			isa = PBXGroup;
-			children = (
-				FCFDEA6725830FC00095974C /* LinkedMeHelper.h */,
-				FCFDEA6825830FC00095974C /* LinkedMeHelper.m */,
-			);
-			path = LinkedMe;
-			sourceTree = "<group>";
-		};
-		FCFDEA6625830F960095974C /* GrowingIO */ = {
-			isa = PBXGroup;
-			children = (
-				FCFDEA6F258312920095974C /* GIOHelper.h */,
-				FCFDEA70258312920095974C /* GIOHelper.m */,
-			);
-			path = GrowingIO;
-			sourceTree = "<group>";
-		};
-		FCFDEA73258312C10095974C /* Push */ = {
-			isa = PBXGroup;
-			children = (
-				FCFDEA74258312D30095974C /* JPushHelper.h */,
-				FCFDEA75258312D30095974C /* JPushHelper.m */,
-				FCFDEA9F258325670095974C /* GPushHelper.h */,
-				FCFDEAA0258325670095974C /* GPushHelper.m */,
-			);
-			path = Push;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,8 +749,8 @@
 				FC9BBA3122B76FE90080298C /* Sources */,
 				FC9BBA3222B76FE90080298C /* Frameworks */,
 				FC9BBA3322B76FE90080298C /* Resources */,
-				B5B86E38F41E0EC1CA84B85F /* [CP] Copy Pods Resources */,
 				FC13A671253DA7200003BBCF /* Embed App Extensions */,
+				3159E8D1BAFAE889F8E43CE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -802,6 +826,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3159E8D1BAFAE889F8E43CE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDDemo/Pods-FDDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDDemo/Pods-FDDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FDDemo/Pods-FDDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A90594205C0CE34A3D78163C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,23 +865,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5B86E38F41E0EC1CA84B85F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FDDemo/Pods-FDDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FDDemo/Pods-FDDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FDDemo/Pods-FDDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -848,28 +872,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2E87CB239E5A6900F84860 /* BaseAdapter.m in Sources */,
-				FC86E5E724FA3C52006FDDA8 /* SAFireBaseCustomFunction.m in Sources */,
-				FCF6D68724E3D30B0080D6FB /* SensorsAnalyticsSDKWrapper.m in Sources */,
-				FCFDEA71258312920095974C /* GIOHelper.m in Sources */,
+				FC80B34525F209DB00A0A70C /* LinkedMeHelper.m in Sources */,
 				FCFDEAA92583529E0095974C /* FDSwizzle.m in Sources */,
+				FC80B33D25F209DB00A0A70C /* SFHelper.m in Sources */,
+				FC80B33B25F209DB00A0A70C /* TrackingIOHelper.m in Sources */,
+				FC80B33F25F209DB00A0A70C /* GPushHelper.m in Sources */,
 				FC9BBA3D22B76FE90080298C /* SecondViewController.m in Sources */,
 				FC1F9B4F2384E49E00C483AA /* FirstViewController.m in Sources */,
-				FCFDEA76258312D30095974C /* JPushHelper.m in Sources */,
-				FC2E87CE239E5BCA00F84860 /* SecondAdapter.m in Sources */,
 				FCFDEAA5258352440095974C /* AppDelegate+Hook.m in Sources */,
-				FCFDEA812583181C0095974C /* SFHelper.m in Sources */,
-				FCFDEA6925830FC00095974C /* LinkedMeHelper.m in Sources */,
 				FC86E5EC24FA3CAA006FDDA8 /* SAPermissions.m in Sources */,
-				FCFA13BA25A5D4920047C6E0 /* FDUniAppHelper.m in Sources */,
 				FCFDEA7B2583139E0095974C /* CommonUtil.m in Sources */,
+				FC80B34425F209DB00A0A70C /* GIOHelper.m in Sources */,
 				FC9BBA3A22B76FE90080298C /* AppDelegate.m in Sources */,
-				FCFDEAA1258325670095974C /* GPushHelper.m in Sources */,
-				FC2E87D1239E5D3400F84860 /* FirstAdapter.m in Sources */,
-				FC7427B625C150490086CCC7 /* TrackingIOHelper.m in Sources */,
-				FC86E5E624FA3C52006FDDA8 /* SAHelper.m in Sources */,
+				FC80B34025F209DB00A0A70C /* JPushHelper.m in Sources */,
+				FC80B34125F209DB00A0A70C /* SAFireBaseCustomFunction.m in Sources */,
+				FC80B34625F209DB00A0A70C /* FDUniAppHelper.m in Sources */,
+				FC80B34225F209DB00A0A70C /* SAFireBase.m in Sources */,
+				FC80B33E25F209DB00A0A70C /* SAHelper.m in Sources */,
 				FC39690824FA41880086E1BD /* main.m in Sources */,
-				FC86E5E824FA3C52006FDDA8 /* SAFireBase.m in Sources */,
+				FC80B33C25F209DB00A0A70C /* SensorsAnalyticsSDKWrapper.m in Sources */,
+				FC80B34325F209DB00A0A70C /* BUADHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1032,8 +1054,73 @@
 					"$(PROJECT_DIR)/trackingIO",
 					"$(PROJECT_DIR)/FDDemo/CAID",
 					"$(PROJECT_DIR)/ExtraFeature/CAID",
+					"$(PROJECT_DIR)/ListClickDemo/CAID",
 				);
 				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"bz2\"",
+					"-l\"c++abi\"",
+					"-l\"c++\"",
+					"-l\"iconv\"",
+					"-l\"icucore\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTSDK\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AppTrackingTransparency\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.productExperience;
 				PRODUCT_NAME = FDDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1088,8 +1175,73 @@
 					"$(PROJECT_DIR)/trackingIO",
 					"$(PROJECT_DIR)/FDDemo/CAID",
 					"$(PROJECT_DIR)/ExtraFeature/CAID",
+					"$(PROJECT_DIR)/ListClickDemo/CAID",
 				);
 				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"bz2\"",
+					"-l\"c++abi\"",
+					"-l\"c++\"",
+					"-l\"iconv\"",
+					"-l\"icucore\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTSDK\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AppTrackingTransparency\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.productExperience;
 				PRODUCT_NAME = FDDemo;
 				PROVISIONING_PROFILE_SPECIFIER = Dis_ProductExperience;

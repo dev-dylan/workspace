@@ -7,20 +7,18 @@
 //
 
 #import "JPushHelper.h"
-// 引入 JPush 功能所需头文件
-#import "JPUSHService.h"
 // 如果需要使用 idfa 功能所需要引入的头文件（可选）
 #import <AdSupport/AdSupport.h>
-
 // iOS10 注册 APNs 所需头文件
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
-
 #endif
 
-@interface JPushHelper () <JPUSHRegisterDelegate>
+// 引入 JPush 功能所需头文件
+#if __has_include("JPUSHService.h")
+#import "JPUSHService.h"
 
-@property (nonatomic, assign) BOOL enable;
+@interface JPushHelper () <JPUSHRegisterDelegate>
 
 @end
 
@@ -37,16 +35,10 @@
 
 #pragma mark - public method
 + (void)handleRemoteNotification:(NSDictionary *)userInfo {
-    if (![[JPushHelper sharedInstance] enable]) {
-        return;
-    }
     [JPUSHService handleRemoteNotification:userInfo];
 }
 
 + (void)registerDeviceToken:(NSData *)deviceToken {
-    if (![[JPushHelper sharedInstance] enable]) {
-        return;
-    }
     [JPUSHService registerDeviceToken:deviceToken];
 }
 
@@ -60,8 +52,6 @@
 
 #pragma mark - private method
 - (void)startJPush:(NSDictionary *)launchOptions {
-
-    _enable = YES;
     [self registerRemoteNotification];
 
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
@@ -146,5 +136,17 @@
 
 }
 
+@end
+
+#else
+
+@implementation JPushHelper
+
++ (void)startJPush:(NSDictionary *)launchOptions{}
++ (void)handleRemoteNotification:(NSDictionary *)userInfo{}
++ (void)registerDeviceToken:(NSData *)deviceToken{}
++ (void)registerRemoteNotification{}
 
 @end
+
+#endif

@@ -1,33 +1,43 @@
 PODS:
-  - GTSDK (2.5.1.0)
-  - JCore (2.4.0)
-  - JPush (3.4.0):
-    - JCore (< 3.0.0, >= 2.0.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - SensorsAnalyticsSDK (2.3.0):
+    - SensorsAnalyticsSDK/Core (= 2.3.0)
   - SensorsAnalyticsSDK/Core (2.3.0)
-  - SensorsAnalyticsSDK/Location (2.3.0):
-    - SensorsAnalyticsSDK/Core
+  - Toast (4.0.0)
 
 DEPENDENCIES:
-  - GTSDK
-  - JPush
-  - SensorsAnalyticsSDK/Location (from `~/Documents/GitLab/sa-sdk-ios-test`)
+  - AFNetworking
+  - SensorsAnalyticsSDK (from `~/Documents/GitLab/sa-sdk-ios`)
+  - Toast (~> 4.0.0)
 
 SPEC REPOS:
-  trunk:
-    - GTSDK
-    - JCore
-    - JPush
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Toast
 
 EXTERNAL SOURCES:
   SensorsAnalyticsSDK:
-    :path: "~/Documents/GitLab/sa-sdk-ios-test"
+    :path: "~/Documents/GitLab/sa-sdk-ios"
 
 SPEC CHECKSUMS:
-  GTSDK: 5f8dd6014febe68acc260e5b902cc29781b6e147
-  JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
-  JPush: defaa108c38806f6efdcfaf4c416854d25fca8e5
-  SensorsAnalyticsSDK: 6044f1e2a0c6ed183d94581e5e620bf69594d3ff
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  SensorsAnalyticsSDK: a74559a2535f67958a4e8ec2e122e09bbe995f81
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 68f6387e044fe626f00875f2f720ef6b5032cc77
+PODFILE CHECKSUM: c252603d26cebccacfac603c04ba0400816966b1
 
 COCOAPODS: 1.9.3

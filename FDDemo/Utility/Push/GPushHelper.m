@@ -7,16 +7,15 @@
 //
 
 #import "GPushHelper.h"
-#import <GTSDK/GeTuiSdk.h>     // GetuiSdk头文件应用
 // iOS10 注册 APNs 所需头文件
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
-
 #endif
 
-@interface GPushHelper () <GeTuiSdkDelegate, UNUserNotificationCenterDelegate>
+#if __has_include(<GTSDK/GeTuiSdk.h>)
+#import <GTSDK/GeTuiSdk.h>     // GetuiSdk头文件应用
 
-@property (nonatomic, assign) BOOL enable;
+@interface GPushHelper () <GeTuiSdkDelegate, UNUserNotificationCenterDelegate>
 
 @end
 
@@ -41,7 +40,6 @@
 }
 
 - (void)setupGTSDK {
-    _enable = YES;
     [GeTuiSdk startSdkWithAppId:@"yV2lNMQL0x9lxAO6B8wuu8" appKey:@"tc1dSLy3Kc7gU7vr7BAOo6" appSecret:@"H6CFhtxzTr6VxDBMfXTHaA" delegate:self];
     [self registerRemoteNotification];
 }
@@ -73,16 +71,10 @@
 }
 
 + (void)registerDeviceTokenData:(NSData *)deviceToken {
-    if (![[GPushHelper sharedInstance] enable]) {
-        return;
-    }
     [GeTuiSdk registerDeviceTokenData:deviceToken];
 }
 
 + (void)handleRemoteNotification:(NSDictionary *)userInfo {
-    if (![[GPushHelper sharedInstance] enable]) {
-        return;
-    }
     [GeTuiSdk handleRemoteNotification:userInfo];
 }
 
@@ -95,3 +87,16 @@
 }
 
 @end
+
+#else
+
+@implementation GPushHelper
+
++ (void)setupGTSDK{}
++ (void)registerDeviceTokenData:(NSData *)deviceToken{}
++ (void)handleRemoteNotification:(NSDictionary *)userInfo{}
++ (void)registerRemoteNotification{}
+
+@end
+
+#endif

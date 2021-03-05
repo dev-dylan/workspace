@@ -10,6 +10,7 @@
 #import <AdSupport/AdSupport.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <Photos/PHPhotoLibrary.h>
+#import <StoreKit/SKAdNetwork.h>
 
 @implementation SAPermissions
 

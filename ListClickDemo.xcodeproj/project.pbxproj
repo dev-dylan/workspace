@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23CE5DE5034A5C01B3DC9BF0 /* Pods_ListClickDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3AA922400A43988349E5E6 /* Pods_ListClickDemo.framework */; };
+		5EE134CD75E1B8A2C5055A53 /* Pods_ListClickDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCC7D9621263D70B995A7F6 /* Pods_ListClickDemo.framework */; };
 		FC261CCE25528D180086F84A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261CCD25528D180086F84A /* AppDelegate.m */; };
 		FC261CD125528D180086F84A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261CD025528D180086F84A /* SceneDelegate.m */; };
 		FC261CD425528D180086F84A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261CD325528D180086F84A /* ViewController.m */; };
@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		41864278EAC37858979D6FAE /* Pods-ListClickDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListClickDemo.debug.xcconfig"; path = "Target Support Files/Pods-ListClickDemo/Pods-ListClickDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4AEC27F266E53FF20A9CB4F5 /* Pods-ListClickDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListClickDemo.release.xcconfig"; path = "Target Support Files/Pods-ListClickDemo/Pods-ListClickDemo.release.xcconfig"; sourceTree = "<group>"; };
-		EB3AA922400A43988349E5E6 /* Pods_ListClickDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListClickDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCC7D9621263D70B995A7F6 /* Pods_ListClickDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListClickDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC261CC925528D180086F84A /* ListClickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListClickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC261CCC25528D180086F84A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC261CCD25528D180086F84A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CE5DE5034A5C01B3DC9BF0 /* Pods_ListClickDemo.framework in Frameworks */,
+				5EE134CD75E1B8A2C5055A53 /* Pods_ListClickDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 		F212A79A3A23C2C97630C240 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB3AA922400A43988349E5E6 /* Pods_ListClickDemo.framework */,
+				8FCC7D9621263D70B995A7F6 /* Pods_ListClickDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 				FC261CC525528D180086F84A /* Sources */,
 				FC261CC625528D180086F84A /* Frameworks */,
 				FC261CC725528D180086F84A /* Resources */,
-				880F953BA0657F6FED9416F8 /* [CP] Embed Pods Frameworks */,
+				9AA5614CFAC4AB559D46792B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +223,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		880F953BA0657F6FED9416F8 /* [CP] Embed Pods Frameworks */ = {
+		9AA5614CFAC4AB559D46792B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,7 +435,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ExtraFeature/CAID",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pengyuanyang.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.SensorsData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +461,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ExtraFeature/CAID",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pengyuanyang.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.SensorsData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

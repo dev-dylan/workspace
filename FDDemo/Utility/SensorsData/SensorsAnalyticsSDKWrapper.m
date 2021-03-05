@@ -1,7 +1,5 @@
 
-//#import <SensorsAnalyticsSDK/Se nsorsAnalyticsSDK.h>
-#ifdef ENABLE_SENSORS_ANALYTICS
-
+#if __has_include("SensorsAnalyticsSDK.h")
 #import "SensorsAnalyticsSDK.h"
 
 void convertToDictionary(const char *json, NSDictionary **properties_dict) {

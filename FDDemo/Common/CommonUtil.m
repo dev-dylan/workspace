@@ -52,4 +52,8 @@
     }
 }
 
++ (void)logClassPropertiesAndMethods:(Class)className {
+//    NSLog(@"%@",[className _methodDescription]);
+}
+
 @end

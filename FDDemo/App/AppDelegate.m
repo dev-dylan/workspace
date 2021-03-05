@@ -18,7 +18,9 @@
 #import "FDSwizzle.h"
 #import "FDUniAppHelper.h"
 #import "TrackingIOHelper.h"
-#import "CAIDHelper.h"
+#import <StoreKit/SKAdNetwork.h>
+#import "BUADHelper.h"
+
 @interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @property (nonatomic, strong) NSPredicate *regexTestName;
@@ -37,6 +39,9 @@
 
 //    [TrackingIOHelper start];
 
+    // 穿山甲
+    [BUADHelper setup];
+
     // 神策 SDK
     [SAHelper setupSensorsAnalytics:launchOptions];
 
@@ -48,7 +53,7 @@
 //    [GIOHelper setupGrowingIO];
 
     // 极光 SDK
-    [JPushHelper startJPush:launchOptions];
+//    [JPushHelper startJPush:launchOptions];
 
     //个推 SDK
 //    [GPushHelper setupGTSDK];

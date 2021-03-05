@@ -21,7 +21,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     NSUserActivity *user = connectionOptions.userActivities.allObjects.firstObject;
     UIOpenURLContext *urlContext = connectionOptions.URLContexts.allObjects.firstObject;
-    [self initSASDK:nil];
+    [self initSASDK:connectionOptions];
 }
 
 - (void)initSASDK:(id)launchOptions {
@@ -31,6 +31,7 @@
     options.enableVisualizedAutoTrack = YES;
     options.enableHeatMap = YES;
     [SensorsAnalyticsSDK startWithConfigOptions:options];
+    [[SensorsAnalyticsSDK sharedInstance] enableTrackGPSLocation:YES];
 }
 
 -(void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {

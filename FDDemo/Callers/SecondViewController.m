@@ -10,13 +10,11 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "SAHelper.h"
-#import "SecondAdapter.h"
-#import "FirstViewController.h"
 #import "FDUniAppHelper.h"
+#import "FirstViewController.h"
 
 @interface SecondViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (nonatomic, strong) SecondAdapter *adapter;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UISwitch *switchs;
@@ -58,16 +56,11 @@
 }
 
 - (IBAction)buttonAction:(id)sender {
-    // 初始化小程序的配置信息对象
-    [FDUniAppHelper openUniMP];
-}
-
-#pragma mark - add child controller
--(void)childController {
     FirstViewController *vc = [FirstViewController new];
-    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
-    [self addChildViewController:vc];
-    [self.view addSubview:vc.view];
+    [self.navigationController pushViewController:vc animated:YES];
+
+    // 初始化小程序的配置信息对象
+//    [FDUniAppHelper openUniMP];
 }
 
 #pragma mark - Picker & DatePicker
