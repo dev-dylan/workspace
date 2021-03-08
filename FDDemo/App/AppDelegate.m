@@ -66,9 +66,6 @@
 
 #pragma mark - Open URL
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    if ([FDUniAppHelper application:app openURL:url options:options]) {
-        return YES;
-    }
     if ([SAHelper canOpenURL:url]) {
         return YES;
     }
@@ -76,6 +73,9 @@
          return YES;
     }
     if ([[LinkedMeHelper sharedInstance] canOpenSchemeURL:url]) {
+        return YES;
+    }
+    if ([FDUniAppHelper application:app openURL:url options:options]) {
         return YES;
     }
     return YES;

@@ -9,7 +9,7 @@ def commonPods
   # 通用
   pod 'AFNetworking'
   pod 'Toast', '~> 4.0.0'
-  pod 'SensorsAnalyticsSDK', :path => "~/Documents/GitLab/sa-sdk-ios"
+  pod 'SensorsAnalyticsSDK', :path => "~/Documents/GitLab/sa-sdk-ios", :subspecs => ['Location', 'CAID']
   # pod 'SensorsAnalyticsSDK', :subspecs => ['Location']
   # pod 'SensorsFocus'
 end

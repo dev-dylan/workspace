@@ -25,63 +25,7 @@
 			<string>gio</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>growing.b4dff241a56e9dac</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>gto2</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>growing.25c9fb99525e2a9c</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>sa4fe7b8ea</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>GIO</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>sae99eadce</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>channeldebug</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>sae99eadce</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>http://10.120.98.246/</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>sad1117366</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>sa769d19bc</string>
+				<string>sa7975924c</string>
 			</array>
 		</dict>
 	</array>

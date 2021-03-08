@@ -14,14 +14,17 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - SensorsAnalyticsSDK (2.3.0):
-    - SensorsAnalyticsSDK/Core (= 2.3.0)
+  - SensorsAnalyticsSDK/CAID (2.3.0):
+    - SensorsAnalyticsSDK/Core
   - SensorsAnalyticsSDK/Core (2.3.0)
+  - SensorsAnalyticsSDK/Location (2.3.0):
+    - SensorsAnalyticsSDK/Core
   - Toast (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - SensorsAnalyticsSDK (from `~/Documents/GitLab/sa-sdk-ios`)
+  - SensorsAnalyticsSDK/CAID (from `~/Documents/GitLab/sa-sdk-ios`)
+  - SensorsAnalyticsSDK/Location (from `~/Documents/GitLab/sa-sdk-ios`)
   - Toast (~> 4.0.0)
 
 SPEC REPOS:
@@ -38,6 +41,6 @@ SPEC CHECKSUMS:
   SensorsAnalyticsSDK: a74559a2535f67958a4e8ec2e122e09bbe995f81
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: c252603d26cebccacfac603c04ba0400816966b1
+PODFILE CHECKSUM: f9d67fe2160f2d2a183dcc0ca9293c8c070ebcbe
 
 COCOAPODS: 1.9.3

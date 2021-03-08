@@ -32,6 +32,19 @@
 		FC80B34425F209DB00A0A70C /* GIOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33325F209DB00A0A70C /* GIOHelper.m */; };
 		FC80B34525F209DB00A0A70C /* LinkedMeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33625F209DB00A0A70C /* LinkedMeHelper.m */; };
 		FC80B34625F209DB00A0A70C /* FDUniAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B33925F209DB00A0A70C /* FDUniAppHelper.m */; };
+		FC80B37425F20E1900A0A70C /* CAIDStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B36F25F20E1900A0A70C /* CAIDStruct.m */; };
+		FC80B37525F20E1900A0A70C /* CAID.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B37025F20E1900A0A70C /* CAID.m */; };
+		FC80B37625F20E1900A0A70C /* CAIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80B37225F20E1900A0A70C /* CAIDError.m */; };
+		FC80B3B025F211E500A0A70C /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107A25A5CEFC0047C6E0 /* libSDWebImage.a */; };
+		FC80B3B125F211E700A0A70C /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107B25A5CEFC0047C6E0 /* liblibIO.a */; };
+		FC80B3B325F211E800A0A70C /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107C25A5CEFC0047C6E0 /* liblibWeex.a */; };
+		FC80B3B425F211E900A0A70C /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107D25A5CEFC0047C6E0 /* liblibPDRCore.a */; };
+		FC80B3B525F211EA00A0A70C /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107E25A5CEFC0047C6E0 /* liblibNativeUI.a */; };
+		FC80B3B625F211EC00A0A70C /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107F25A5CEFC0047C6E0 /* liblibUI.a */; };
+		FC80B3B725F211FF00A0A70C /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108025A5CEFC0047C6E0 /* libcoreSupport.a */; };
+		FC80B3B825F2120200A0A70C /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108225A5CEFC0047C6E0 /* liblibPGInvocation.a */; };
+		FC80B3B925F2120400A0A70C /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108325A5CEFC0047C6E0 /* liblibNavigator.a */; };
+		FC80B3BB25F2120C00A0A70C /* liblibNativeObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108525A5CEFC0047C6E0 /* liblibNativeObj.a */; };
 		FC86E5EC24FA3CAA006FDDA8 /* SAPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86E5EB24FA3CAA006FDDA8 /* SAPermissions.m */; };
 		FC90C4B823BDDFC1008F92E0 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */; };
 		FC90C4B923BDE031008F92E0 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */; };
@@ -57,18 +70,7 @@
 		FCFA131525A5CEFE0047C6E0 /* unincomponents.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA107625A5CEFC0047C6E0 /* unincomponents.ttf */; };
 		FCFA131625A5CEFE0047C6E0 /* weex-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = FCFA107725A5CEFC0047C6E0 /* weex-polyfill.js */; };
 		FCFA131725A5CEFE0047C6E0 /* weexUniJs.js in Resources */ = {isa = PBXBuildFile; fileRef = FCFA107825A5CEFC0047C6E0 /* weexUniJs.js */; };
-		FCFA131825A5CEFE0047C6E0 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107A25A5CEFC0047C6E0 /* libSDWebImage.a */; };
-		FCFA131925A5CEFE0047C6E0 /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107B25A5CEFC0047C6E0 /* liblibIO.a */; };
-		FCFA131A25A5CEFE0047C6E0 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107C25A5CEFC0047C6E0 /* liblibWeex.a */; };
-		FCFA131B25A5CEFE0047C6E0 /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107D25A5CEFC0047C6E0 /* liblibPDRCore.a */; };
-		FCFA131C25A5CEFE0047C6E0 /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107E25A5CEFC0047C6E0 /* liblibNativeUI.a */; };
-		FCFA131D25A5CEFE0047C6E0 /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA107F25A5CEFC0047C6E0 /* liblibUI.a */; };
-		FCFA131E25A5CEFE0047C6E0 /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108025A5CEFC0047C6E0 /* libcoreSupport.a */; };
-		FCFA131F25A5CEFE0047C6E0 /* liblibStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108125A5CEFC0047C6E0 /* liblibStorage.a */; };
-		FCFA132025A5CEFE0047C6E0 /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108225A5CEFC0047C6E0 /* liblibPGInvocation.a */; };
-		FCFA132125A5CEFE0047C6E0 /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108325A5CEFC0047C6E0 /* liblibNavigator.a */; };
 		FCFA132225A5CEFE0047C6E0 /* storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108425A5CEFC0047C6E0 /* storage.framework */; };
-		FCFA132325A5CEFE0047C6E0 /* liblibNativeObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA108525A5CEFC0047C6E0 /* liblibNativeObj.a */; };
 		FCFA139325A5CF5D0047C6E0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139225A5CF5D0047C6E0 /* JavaScriptCore.framework */; };
 		FCFA139525A5CF7B0047C6E0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139425A5CF7B0047C6E0 /* CoreMedia.framework */; };
 		FCFA139725A5CF840047C6E0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA139625A5CF840047C6E0 /* MediaPlayer.framework */; };
@@ -149,6 +151,24 @@
 		FC80B33725F209DB00A0A70C /* LinkedMeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedMeHelper.h; sourceTree = "<group>"; };
 		FC80B33925F209DB00A0A70C /* FDUniAppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUniAppHelper.m; sourceTree = "<group>"; };
 		FC80B33A25F209DB00A0A70C /* FDUniAppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUniAppHelper.h; sourceTree = "<group>"; };
+		FC80B36E25F20E1900A0A70C /* CAIDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIDError.h; sourceTree = "<group>"; };
+		FC80B36F25F20E1900A0A70C /* CAIDStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIDStruct.m; sourceTree = "<group>"; };
+		FC80B37025F20E1900A0A70C /* CAID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAID.m; sourceTree = "<group>"; };
+		FC80B37125F20E1900A0A70C /* CAIDStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIDStruct.h; sourceTree = "<group>"; };
+		FC80B37225F20E1900A0A70C /* CAIDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIDError.m; sourceTree = "<group>"; };
+		FC80B37325F20E1900A0A70C /* CAID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAID.h; sourceTree = "<group>"; };
+		FC80B3A325F211C700A0A70C /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDWebImage.a; sourceTree = "<group>"; };
+		FC80B3A425F211C700A0A70C /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibIO.a; sourceTree = "<group>"; };
+		FC80B3A525F211C700A0A70C /* liblibWeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibWeex.a; sourceTree = "<group>"; };
+		FC80B3A625F211C700A0A70C /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPDRCore.a; sourceTree = "<group>"; };
+		FC80B3A725F211C700A0A70C /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeUI.a; sourceTree = "<group>"; };
+		FC80B3A825F211C700A0A70C /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
+		FC80B3A925F211C700A0A70C /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoreSupport.a; sourceTree = "<group>"; };
+		FC80B3AA25F211C700A0A70C /* liblibStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibStorage.a; sourceTree = "<group>"; };
+		FC80B3AB25F211C700A0A70C /* liblibPGInvocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPGInvocation.a; sourceTree = "<group>"; };
+		FC80B3AC25F211C700A0A70C /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNavigator.a; sourceTree = "<group>"; };
+		FC80B3AD25F211C700A0A70C /* storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = storage.framework; sourceTree = "<group>"; };
+		FC80B3AE25F211C700A0A70C /* liblibNativeObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeObj.a; sourceTree = "<group>"; };
 		FC86E5EA24FA3CAA006FDDA8 /* SAPermissions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAPermissions.h; sourceTree = "<group>"; };
 		FC86E5EB24FA3CAA006FDDA8 /* SAPermissions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAPermissions.m; sourceTree = "<group>"; };
 		FC90C4B723BDDFC1008F92E0 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
@@ -315,6 +335,17 @@
 				FC7427AA25C14ED30086CCC7 /* CoreMotion.framework in Frameworks */,
 				FCFA13A525A5CFB30047C6E0 /* CoreGraphics.framework in Frameworks */,
 				FCFA13A325A5CFAC0047C6E0 /* QuartzCore.framework in Frameworks */,
+				FC80B3B125F211E700A0A70C /* liblibIO.a in Frameworks */,
+				FC80B3B325F211E800A0A70C /* liblibWeex.a in Frameworks */,
+				FC80B3B425F211E900A0A70C /* liblibPDRCore.a in Frameworks */,
+				FC80B3B025F211E500A0A70C /* libSDWebImage.a in Frameworks */,
+				FC80B3B525F211EA00A0A70C /* liblibNativeUI.a in Frameworks */,
+				FC80B3B625F211EC00A0A70C /* liblibUI.a in Frameworks */,
+				FC80B3B725F211FF00A0A70C /* libcoreSupport.a in Frameworks */,
+				FC80B3B825F2120200A0A70C /* liblibPGInvocation.a in Frameworks */,
+				FC80B3B925F2120400A0A70C /* liblibNavigator.a in Frameworks */,
+				FCFA132225A5CEFE0047C6E0 /* storage.framework in Frameworks */,
+				FC80B3BB25F2120C00A0A70C /* liblibNativeObj.a in Frameworks */,
 				FCFA13A125A5CFA60047C6E0 /* CoreText.framework in Frameworks */,
 				FCFA139F25A5CF9F0047C6E0 /* OpenGLES.framework in Frameworks */,
 				FCFA139D25A5CF990047C6E0 /* GLKit.framework in Frameworks */,
@@ -323,21 +354,9 @@
 				FC7427AB25C14EE10086CCC7 /* iAd.framework in Frameworks */,
 				FCFA139525A5CF7B0047C6E0 /* CoreMedia.framework in Frameworks */,
 				FCFA139325A5CF5D0047C6E0 /* JavaScriptCore.framework in Frameworks */,
-				FCFA131E25A5CEFE0047C6E0 /* libcoreSupport.a in Frameworks */,
-				FCFA131925A5CEFE0047C6E0 /* liblibIO.a in Frameworks */,
 				FC7427A825C14EC40086CCC7 /* SystemConfiguration.framework in Frameworks */,
-				FCFA132325A5CEFE0047C6E0 /* liblibNativeObj.a in Frameworks */,
-				FCFA131C25A5CEFE0047C6E0 /* liblibNativeUI.a in Frameworks */,
-				FCFA132125A5CEFE0047C6E0 /* liblibNavigator.a in Frameworks */,
 				FCAAD67125E5F56300A03122 /* StoreKit.framework in Frameworks */,
-				FCFA131B25A5CEFE0047C6E0 /* liblibPDRCore.a in Frameworks */,
-				FCFA132025A5CEFE0047C6E0 /* liblibPGInvocation.a in Frameworks */,
-				FCFA131F25A5CEFE0047C6E0 /* liblibStorage.a in Frameworks */,
-				FCFA131D25A5CEFE0047C6E0 /* liblibUI.a in Frameworks */,
 				FC7427AF25C14EFE0086CCC7 /* CFNetwork.framework in Frameworks */,
-				FCFA131A25A5CEFE0047C6E0 /* liblibWeex.a in Frameworks */,
-				FCFA131825A5CEFE0047C6E0 /* libSDWebImage.a in Frameworks */,
-				FCFA132225A5CEFE0047C6E0 /* storage.framework in Frameworks */,
 				FC98E143251B1F630005BDFD /* AppTrackingTransparency.framework in Frameworks */,
 				FCF04B56230BDD5A00AE7C48 /* iAd.framework in Frameworks */,
 				FC90C4B923BDE031008F92E0 /* CoreSpotlight.framework in Frameworks */,
@@ -352,6 +371,7 @@
 		71CBF6846D77A769CAAC2D48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC80B3A225F211C700A0A70C /* Libs */,
 				FCA11CEB25E7792500ABC51E /* libiconv.tbd */,
 				FCA11CE825E7791300ABC51E /* libxml2.tbd */,
 				FCA11CE525E7790C00ABC51E /* libbz2.tbd */,
@@ -459,6 +479,7 @@
 		FC80B31B25F209B100A0A70C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FC80B36D25F20E1900A0A70C /* CAID */,
 				FC80B32F25F209DB00A0A70C /* AD */,
 				FC80B32A25F209DB00A0A70C /* FireBase */,
 				FC80B33225F209DB00A0A70C /* GrowingIO */,
@@ -544,17 +565,50 @@
 		FC80B33825F209DB00A0A70C /* UniApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCFA106F25A5CEFC0047C6E0 /* UniMPSDK */,
 				FC80B33A25F209DB00A0A70C /* FDUniAppHelper.h */,
 				FC80B33925F209DB00A0A70C /* FDUniAppHelper.m */,
 			);
 			path = UniApp;
 			sourceTree = "<group>";
 		};
+		FC80B36D25F20E1900A0A70C /* CAID */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B37325F20E1900A0A70C /* CAID.h */,
+				FC80B37025F20E1900A0A70C /* CAID.m */,
+				FC80B36E25F20E1900A0A70C /* CAIDError.h */,
+				FC80B37225F20E1900A0A70C /* CAIDError.m */,
+				FC80B37125F20E1900A0A70C /* CAIDStruct.h */,
+				FC80B36F25F20E1900A0A70C /* CAIDStruct.m */,
+			);
+			path = CAID;
+			sourceTree = "<group>";
+		};
+		FC80B3A225F211C700A0A70C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FC80B3A325F211C700A0A70C /* libSDWebImage.a */,
+				FC80B3A425F211C700A0A70C /* liblibIO.a */,
+				FC80B3A525F211C700A0A70C /* liblibWeex.a */,
+				FC80B3A625F211C700A0A70C /* liblibPDRCore.a */,
+				FC80B3A725F211C700A0A70C /* liblibNativeUI.a */,
+				FC80B3A825F211C700A0A70C /* liblibUI.a */,
+				FC80B3A925F211C700A0A70C /* libcoreSupport.a */,
+				FC80B3AA25F211C700A0A70C /* liblibStorage.a */,
+				FC80B3AB25F211C700A0A70C /* liblibPGInvocation.a */,
+				FC80B3AC25F211C700A0A70C /* liblibNavigator.a */,
+				FC80B3AD25F211C700A0A70C /* storage.framework */,
+				FC80B3AE25F211C700A0A70C /* liblibNativeObj.a */,
+			);
+			name = Libs;
+			path = FDDemo/Utility/UniApp/UniMPSDK/Core/Libs;
+			sourceTree = "<group>";
+		};
 		FC9BBA2C22B76FE90080298C = {
 			isa = PBXGroup;
 			children = (
 				FC2BC95E246941DA00DCBE32 /* container */,
-				FCFA106F25A5CEFC0047C6E0 /* UniMPSDK */,
 				FC9BBA3722B76FE90080298C /* FDDemo */,
 				FC9BBA3622B76FE90080298C /* Products */,
 				B8033A95CAB5C7D1224CA33B /* Pods */,
@@ -883,12 +937,15 @@
 				FC86E5EC24FA3CAA006FDDA8 /* SAPermissions.m in Sources */,
 				FCFDEA7B2583139E0095974C /* CommonUtil.m in Sources */,
 				FC80B34425F209DB00A0A70C /* GIOHelper.m in Sources */,
+				FC80B37425F20E1900A0A70C /* CAIDStruct.m in Sources */,
+				FC80B37625F20E1900A0A70C /* CAIDError.m in Sources */,
 				FC9BBA3A22B76FE90080298C /* AppDelegate.m in Sources */,
 				FC80B34025F209DB00A0A70C /* JPushHelper.m in Sources */,
 				FC80B34125F209DB00A0A70C /* SAFireBaseCustomFunction.m in Sources */,
 				FC80B34625F209DB00A0A70C /* FDUniAppHelper.m in Sources */,
 				FC80B34225F209DB00A0A70C /* SAFireBase.m in Sources */,
 				FC80B33E25F209DB00A0A70C /* SAHelper.m in Sources */,
+				FC80B37525F20E1900A0A70C /* CAID.m in Sources */,
 				FC39690824FA41880086E1BD /* main.m in Sources */,
 				FC80B33C25F209DB00A0A70C /* SensorsAnalyticsSDKWrapper.m in Sources */,
 				FC80B34325F209DB00A0A70C /* BUADHelper.m in Sources */,
@@ -1032,6 +1089,7 @@
 					"$(PROJECT_DIR)/UniMPSDK/Features/Libs",
 					"$(PROJECT_DIR)/UniMPSDK/Extension",
 					"$(PROJECT_DIR)/trackingIO",
+					"$(PROJECT_DIR)/FDDemo/Utility/UniApp/UniMPSDK/Core/Libs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FDDemo/App/PrefixHeader.pch";
@@ -1055,6 +1113,7 @@
 					"$(PROJECT_DIR)/FDDemo/CAID",
 					"$(PROJECT_DIR)/ExtraFeature/CAID",
 					"$(PROJECT_DIR)/ListClickDemo/CAID",
+					"$(PROJECT_DIR)/FDDemo/Utility/UniApp/UniMPSDK/Core/Libs",
 				);
 				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
@@ -1094,8 +1153,6 @@
 					"\"CoreTelephony\"",
 					"-framework",
 					"\"Foundation\"",
-					"-framework",
-					"\"GTSDK\"",
 					"-framework",
 					"\"JavaScriptCore\"",
 					"-framework",
@@ -1151,6 +1208,7 @@
 					"$(PROJECT_DIR)/UniMPSDK/Features/Libs",
 					"$(PROJECT_DIR)/UniMPSDK/Extension",
 					"$(PROJECT_DIR)/trackingIO",
+					"$(PROJECT_DIR)/FDDemo/Utility/UniApp/UniMPSDK/Core/Libs",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FDDemo/App/PrefixHeader.pch";
@@ -1176,6 +1234,7 @@
 					"$(PROJECT_DIR)/FDDemo/CAID",
 					"$(PROJECT_DIR)/ExtraFeature/CAID",
 					"$(PROJECT_DIR)/ListClickDemo/CAID",
+					"$(PROJECT_DIR)/FDDemo/Utility/UniApp/UniMPSDK/Core/Libs",
 				);
 				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
@@ -1215,8 +1274,6 @@
 					"\"CoreTelephony\"",
 					"-framework",
 					"\"Foundation\"",
-					"-framework",
-					"\"GTSDK\"",
 					"-framework",
 					"\"JavaScriptCore\"",
 					"-framework",

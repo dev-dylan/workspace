@@ -80,7 +80,7 @@ void track_timer_end(const char *eventName, const char *properties) {
 
 void remove_timer(const char *eventName) {
     NSString *newEventName = [NSString stringWithCString:eventName encoding:NSUTF8StringEncoding];
-//    [[SensorsAnalyticsSDK sharedInstance] removeTimer:newEventName];
+    [[SensorsAnalyticsSDK sharedInstance] removeTimer:newEventName];
 }
 
 void clear_track_timer() {
